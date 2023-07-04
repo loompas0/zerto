@@ -84,4 +84,4 @@ catch {
 # write-output $result
 # Write-Output $result.Basic.name
 # Write-Output $result.VpgSettingsIdentifier $result.Basic.name  | format-table
- $result | Select-Object VpgIdentifier, VpgSettingsIdentifier, Basic | format-table 
+ $result | Select-Object VpgIdentifier, Vms, VpgSettingsIdentifier, Basic | format-table 
