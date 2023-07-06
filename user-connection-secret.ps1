@@ -9,16 +9,16 @@ In no event shall Zerto, its authors or anyone else involved in the creation, pr
 # - requires ZVM Linux Appliance 9.5U1 or higher, developed and tested on 9.5U3
 
 #Choose server to be connectted and affect secret to it 
-# $DC1 ='10.13.1.190'
-# $DC2 ='10.13.1.191'
+$DC1 ='10.13.1.190'
+$DC2 ='10.13.1.191'
 function Show-Menu
 {
     param
     (
         [string]$Title = ‘On Which DC Do you want to be connected’
     )
-    $DC1 ='10.13.1.190'
-    $DC2 ='10.13.1.191'
+    # $DC1 ='10.13.1.190'
+    # $DC2 ='10.13.1.191'
    # write Menu
     Write-Host “== $Title ==”
     Write-Host “1: Press ‘1’ for DC1 ($DC1).”
@@ -28,6 +28,7 @@ function Show-Menu
 Show-Menu 
 
 $DC = Read-Host “Please make a selection”
+
 switch ($DC)
 {
     ‘1’
@@ -43,8 +44,6 @@ switch ($DC)
         $keycloakClientSecret = "4Mf81PXuGyiWhtf0QBPIxs7hambA8DVK"
     }
 }
-
-
 $skipCertificateCheck = $true       # for self-signed certs, so this flag is passed to Invoke-RestMethod to allow it to proceed.
 
 # Nothing below this line needs to be changed
@@ -85,4 +84,4 @@ catch {
     Write-Error "Error connecting to Keycloak" -ErrorAction Stop
 }
 $token = $result.access_token
-return $token , $zvmApiBase , $zvmAddress
+
