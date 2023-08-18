@@ -35,7 +35,7 @@ switch ($DC)
     {
         $zvmAddress = $DC1
         $keycloakClientID = "api-script"
-        $keycloakClientSecret = "kzM0K1B46rqjlrfusyaP8K8gQRp1aB4l"
+        $keycloakClientSecret = "CpFGp28bstjzOclQdR6RUBpZ23m7p8Rm"
     }
     ‘2’
     {

@@ -20,4 +20,4 @@ Connect-VIServer -Force -Server $VcenterServer -Credential $VCenterCredential
 $AllVms = Get-VM
 # $AllVms | Select-Object Name, Id | Format-Table
 $AllVms | Select-Object Name, Id, @{ Name = "UUID"; Expression = {(Get-View $_.Id).config.uuid}} |Format-Table
-
+#{    "vmIdentifier": "4207156b-a76a-040d-bfe7-9ae23fea2af8.vm-27299" }

@@ -12,6 +12,6 @@ $ZertoPort="9669"
 #
 # Connect to ZVM 
 Remove-ZvmSslCheck
-Connect-Zvm -hostName $ZertoServer -credential $ZertoCredential -Port $ZertoPort
+Connect-Zvm -hostName $ZertoServer -credential $ZertoCredential 
 # Write-Output $Token
 get-zvmvpg
