@@ -1,0 +1,63 @@
+Zerto documentations
+
+
+VRA prerequisite : https://help.zerto.com/bundle/Linux.ZVM.HTML.10.0/page/ZVM_Linux_Requirements_for_VRAs.htm
+
+How to Perform Basic Troubleshooting Steps When a VRA Upgrade/Installation Fails : https://help.zerto.com/en-US/kb/000004194
+
+ZVM prerequisite : https://help.zerto.com/bundle/Linux.ZVM.HTML/page/Book_in_Portal_-_Prerequisite_for_ZVM_Linux.htm
+
+ZVM Appliance Q&A : https://help.zerto.com/bundle/Linux.ZVM.HTML/page/ZVM_Linux_FAQs.htm
+
+How to separate 'Management' and 'Replication' Networks using Dual Nics ZVM Setup  : https://help.zerto.com/en-US/kb/000004350
+
+Immutability : https://help.zerto.com/bundle/Admin.VC.HTML/page/Immutability.htm
+
+How to protect and recover the ZVM server : https://help.zerto.com/en-US/kb/000003015
+
+Security and Hardening : https://help.zerto.com/en-US/bundle/Security.Hardening.HTML/page/Security_and_Hardening_With_Zerto.htm
+
+How to enable SSH connections to a ZVML VRA : https://help.zerto.com/en-US/kb/000004953
+
+Appliance Manager CLI Menu : https://help.zerto.com/en-US/bundle/Linux.ZVM.HTML/page/ZVM_Linux_Appliance_Menu.htm (MDP par défaut déploiement ZVM CLI)
+
+Configure AD with ZVMA (LDAP): https://help.zerto.com/bundle/Linux.ZVM.HTML/page/User_Federation.htm 
+Configure AD with ZVMA (LDAPS) : https://help.zerto.com/bundle/Linux.ZVM.HTML.10.0_U1/page/User_Federation.htm
+
+ZVM Appliance Roles and Permissions : https://help.zerto.com/bundle/Linux.ZVM.HTML/page/ZVM_ApplianceRolesandPermissions.htm
+
+How to Move a VM from One VPG to Another VPG : https://help.zerto.com/en-US/kb/000004215
+
+How to protect and recover the ZVM server : https://help.zerto.com/en-US/kb/000003015
+
+Azure Calculator : https://www.zerto.com/page/azure-calculator/
+
+Upgrading your ZVM Appliance : https://help.zerto.com/bundle/Linux.ZVM.HTML/page/ZVM_Linux_Upgrade.htm
+
+Ensuring Application Consistency – Checkpoints : https://help.zerto.com/bundle/Admin.VC.HTML/page/Ensuring_Application_Consistency_%E2%80%93_Checkpoints.htm
+
+Zerto Keepit : https://experience.zerto.com/zerto-backup-for-saas/zerto-backup-for-saas
+
+How to Create and Manage MyZerto Users and Permissions : https://help.zerto.com/en-US/kb/000004811
+
+Vcenter role least privileges : https://github.com/ZertoPublic/zerto_vcenter_role_least_privileges
+
+vSphere: Privileges Required by Zerto Virtual Replication : https://help.zerto.com/bundle/Install.VC.HTML/page/vSphere_Privileges_Required_by_Zerto_Virtual_Replication.htm
+
+ZERTO ZVML Commandlets : https://www.powershellgallery.com/packages/Zerto.Zvml.Commandlets/1.0.953
+
+ZVM default sizing : 8 VCPU, 16GB, Zerto 180 GB sur le ZVM
+
+Single vCenter, Single ZVM, and Recovering Zerto in a Failure Scenario : https://www.genetorres.me/2018/03/05/single-vcenter-single-zvm-and-recovering-zerto-in-a-failure-scenario/
+
+Migrate VM from Hyper-V to vSphere with Pre-Installed VMware Tools : https://www.genetorres.me/2023/02/02/update-migrate-vm-from-hyper-v-to-vsphere-with-pre-installed-vmware-tools-vsphere-7-and-8-edition/
+
+Defining Proxy Configuration for ZVM Appliance - https://help.zerto.com/bundle/Linux.ZVM.HTML.10.0/page/Define_Proxy_Configuration.htm
+
+ZVM Appliance Log Collection - https://help.zerto.com/bundle/Linux.ZVM.HTML.10.0/page/ZVM_Linux_Log_Collection.htm
+
+Hyper-V EOL announcement : https://help.zerto.com/kb/000004968
+
+Release Notes : https://help.zerto.com/category/Release%20Notes
+
+How to Separate 'Management' and 'Replication' Networks using Dual NICs ZVM Setup : https://help.zerto.com/kb/000004350

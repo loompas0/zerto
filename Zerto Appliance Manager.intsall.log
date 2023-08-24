@@ -1,0 +1,1300 @@
+Appliance Manager
+
+Choose an option from the menu below :
+
+        1 : Display Current Network Settings
+        2 : Configure Network Settings
+        3 : Restart ZVM Service
+        4 : Reboot Appliance
+        5 : Shutdown Appliance
+        6 : Upgrade Appliance
+        7 : Manage ssh
+        8 : Sql Server Port Manager
+        0 : Exit to Shell
+
+Enter a number from the menu above : 6
+Please enter version to upgrade to in format of X.X.XX: 10.0.0
+--2023-07-18 12:56:00--  https://zertodownloads.s3.amazonaws.com/myz_Zerto/ZVML_Upgarde/official_upgrade_to_10.0.0.bash
+Resolving zertodownloads.s3.amazonaws.com (zertodownloads.s3.amazonaws.com)... 52.217.205.121, 52.216.137.100, 52.217.227.209, ...
+Connecting to zertodownloads.s3.amazonaws.com (zertodownloads.s3.amazonaws.com)|52.217.205.121|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 57321 (56K) [application/octet-stream]
+Saving to: ‘STDOUT’
+
+-                   100%[===================>]  55.98K  --.-KB/s    in 0.08s
+
+2023-07-18 12:56:09 (706 KB/s) - written to stdout [57321/57321]
+
+Requirement already satisfied: pyjwt in /usr/local/lib/python3.9/dist-packages (2.6.0)
+Requirement already satisfied: pyjwt[crypto] in /usr/local/lib/python3.9/dist-packages (2.6.0)
+Requirement already satisfied: cryptography>=3.4.0 in /usr/local/lib/python3.9/dist-packages (from pyjwt[crypto]) (38.0.3)
+Requirement already satisfied: cffi>=1.12 in /usr/local/lib/python3.9/dist-packages (from cryptography>=3.4.0->pyjwt[crypto]) (1.15.1)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.9/dist-packages (from cffi>=1.12->cryptography>=3.4.0->pyjwt[crypto]) (2.21)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+axel is already the newest version (2.17.10-2).
+The following packages were automatically installed and are no longer required:
+  liblzo2-2 squashfs-tools
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+pigz is already the newest version (2.6-1).
+The following packages were automatically installed and are no longer required:
+  liblzo2-2 squashfs-tools
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+ Tue 18 Jul 2023 09:56:13 AM UTC opt drive has 48G available disk space
+--2023-07-18 12:56:13--  https://zertodownloads.s3.amazonaws.com/myz_Zerto/ZVML_Upgarde/minibundle_vc_10.0.0.1712.tar.gz
+Resolving zertodownloads.s3.amazonaws.com (zertodownloads.s3.amazonaws.com)... 52.217.108.108, 3.5.28.167, 52.217.226.89, ...
+Connecting to zertodownloads.s3.amazonaws.com (zertodownloads.s3.amazonaws.com)|52.217.108.108|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 17307 (17K) [application/octet-stream]
+Saving to: ‘/opt/zerto/zvr/upgrade-files/minibundle_vc_10.0.0.1712.tar.gz’
+
+/opt/zerto/zvr/upgr 100%[===================>]  16.90K  --.-KB/s    in 0.002s
+
+2023-07-18 12:56:13 (7.38 MB/s) - ‘/opt/zerto/zvr/upgrade-files/minibundle_vc_10.0.0.1712.tar.gz’ saved [17307/17307]
+
+--2023-07-18 12:56:13--  https://zertodownloads.s3.amazonaws.com/myz_Zerto/ZVML_Upgarde/minibundle_vc_10.0.0.1712.tar.gz.sig
+Resolving zertodownloads.s3.amazonaws.com (zertodownloads.s3.amazonaws.com)... 3.5.28.167, 52.217.226.89, 52.216.216.97, ...
+Connecting to zertodownloads.s3.amazonaws.com (zertodownloads.s3.amazonaws.com)|3.5.28.167|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 384 [application/octet-stream]
+Saving to: ‘/opt/zerto/zvr/upgrade-files/minibundle_vc_10.0.0.1712.tar.gz.sig’
+
+/opt/zerto/zvr/upgr 100%[===================>]     384  --.-KB/s    in 0s
+
+2023-07-18 12:56:14 (7.27 MB/s) - ‘/opt/zerto/zvr/upgrade-files/minibundle_vc_10.0.0.1712.tar.gz.sig’ saved [384/384]
+
+minibundle_vc_10.0.0.1712/
+minibundle_vc_10.0.0.1712/helmcharts/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/values.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/statefulsets/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/statefulsets/zkeycloak.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/jobs/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/jobs/post-install-job.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/secrets/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/secrets/zkeycloak-secret.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/secrets/zkeycloak-image-pull-secret.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/secrets/zkeycloak-database-secret.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/configmaps/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/configmaps/zkeycloak-database-config.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/NOTES.txt
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/deployments/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/deployments/zkeycloak-database.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/_helpers.tpl
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/storage/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/storage/persistent-volumes/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/storage/persistent-volumes/zkeycloak-database-pv.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/storage/persistent-volumes/zkeycloak-post-install-job-pv.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/storage/persistent-volume-claims/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/storage/persistent-volume-claims/zkeycloak-database-pvc.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/storage/persistent-volume-claims/zkeycloak-post-install-job-pvc.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/ingresses/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/ingresses/zkeycloak-ingress.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/rbac/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/rbac/serviceaccount.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/rbac/rbac.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/services/
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/services/zkeycloak-database-service.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/templates/services/zkeycloak-service.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zkeycloak/Chart.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/values.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/templates/
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/templates/configmap.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/templates/serviceaccount.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/templates/daemonset.yaml
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/templates/_helpers.tpl
+minibundle_vc_10.0.0.1712/helmcharts/zfluentd/Chart.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/values.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/confignmap/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/confignmap/upgrade-validations-configmap.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/NOTES.txt
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/deployments/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/deployments/upgrade-service-deployment.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/_helpers.tpl
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/storage/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/storage/persistent-volumes/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/storage/persistent-volumes/upgrade-service-pv.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/storage/persistent-volume-claims/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/storage/persistent-volume-claims/upgrade-service-pvc.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/ingresses/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/ingresses/upgrade-service-ingresses.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/services/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/services/upgrade-service-svc.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/hooks/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/hooks/pre-upgrade/
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/templates/hooks/pre-upgrade/upgrade-validations.yaml
+minibundle_vc_10.0.0.1712/helmcharts/upgrade-service/Chart.yaml
+minibundle_vc_10.0.0.1712/rollback.bash
+minibundle_vc_10.0.0.1712/zappliance/
+minibundle_vc_10.0.0.1712/zappliance/src/
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/004-runtime/
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/004-runtime/files/
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/004-runtime/files/runtime/
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/004-runtime/files/runtime/HostCommands/
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/004-runtime/files/runtime/HostCommands/file_watcher.path
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/004-runtime/files/runtime/HostCommands/k8s_host_level_executer.bash
+minibundle_vc_10.0.0.1712/zappliance/src/playbooks/004-runtime/files/runtime/HostCommands/host_command.service
+minibundle_vc_10.0.0.1712/upgrade.artifacts.json
+sudo: snap: command not found
+ Tue 18 Jul 2023 09:56:14 AM UTC Installing snapd
+Hit:1 http://httpredir.debian.org/debian bullseye InRelease
+Get:2 http://httpredir.debian.org/debian bullseye-updates InRelease [44.1 kB]
+Get:3 http://security.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Hit:4 https://download.docker.com/linux/debian bullseye InRelease
+Get:5 http://security.debian.org/debian-security bullseye-security/main Sources [204 kB]
+Get:6 http://security.debian.org/debian-security bullseye-security/main amd64 Packages [252 kB]
+Get:7 http://security.debian.org/debian-security bullseye-security/main Translation-en [164 kB]
+Fetched 713 kB in 1s (1,129 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+Suggested packages:
+    zenity | kdialog
+The following NEW packages will be installed:
+  snapd
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 13.3 MB of archives.
+After this operation, 56.5 MB of additional disk space will be used.
+Get:1 http://httpredir.debian.org/debian bullseye/main amd64 snapd amd64 2.49-1+deb11u2 [13.3 MB]
+Fetched 13.3 MB in 0s (100 MB/s)
+Selecting previously unselected package snapd.
+(Reading database ... 43081 files and directories currently installed.)
+Preparing to unpack .../snapd_2.49-1+deb11u2_amd64.deb ...
+Unpacking snapd (2.49-1+deb11u2) ...
+Setting up snapd (2.49-1+deb11u2) ...
+snapd.service is a disabled or a static unit, not starting it.
+Processing triggers for dbus (1.12.24-0+deb11u1) ...
+Processing triggers for mailcap (3.69) ...
+Processing triggers for man-db (2.9.4-2) ...
+ Tue 18 Jul 2023 09:56:20 AM UTC Configure blind-mount for snap
+ Tue 18 Jul 2023 09:56:20 AM UTC Configure blind-mount for snap completed
+ Tue 18 Jul 2023 09:56:20 AM UTC Starting microk8s installation (attempt 1)
+ Tue 18 Jul 2023 09:56:50 AM UTC Installing microk8s
+microk8s (1.25/stable) v1.25.11 from Canonical✓ installed
+ microk8s installed
+Auto-refresh of all snaps held indefinitely
+ Tue 18 Jul 2023 09:57:00 AM UTC Configuring microk8s addons
+ Tue 18 Jul 2023 09:57:00 AM UTC Disabling ha-cluster addon. This operation may take a few minutes
+Infer repository core for addon ha-cluster
+Reverting to a non-HA setup
+Generating new cluster certificates.
+Waiting for node to start.
+Enabling flanneld and etcd
+HA disabled
+ Tue 18 Jul 2023 10:03:29 AM UTC Verifying microk8s is ready
+ Tue 18 Jul 2023 10:03:30 AM UTC microk8s is ready
+ Tue 18 Jul 2023 10:03:30 AM UTC Enabling dns addon
+ Tue 18 Jul 2023 10:03:41 AM UTC Infer repository core for addon dns
+Enabling DNS
+Applying manifest
+serviceaccount/coredns created
+configmap/coredns created
+deployment.apps/coredns created
+service/kube-dns created
+clusterrole.rbac.authorization.k8s.io/coredns created
+clusterrolebinding.rbac.authorization.k8s.io/coredns created
+Restarting kubelet
+DNS is enabled
+ Tue 18 Jul 2023 10:03:41 AM UTC Verifying microk8s is ready
+ Tue 18 Jul 2023 10:03:42 AM UTC microk8s is ready
+ Tue 18 Jul 2023 10:03:42 AM UTC Enabling hostpath-storage addon
+Infer repository core for addon hostpath-storage
+Enabling default storage class.
+WARNING: Hostpath storage is not suitable for production environments.
+
+deployment.apps/hostpath-provisioner created
+storageclass.storage.k8s.io/microk8s-hostpath created
+serviceaccount/microk8s-hostpath created
+clusterrole.rbac.authorization.k8s.io/microk8s-hostpath created
+clusterrolebinding.rbac.authorization.k8s.io/microk8s-hostpath created
+Storage will be available soon.
+ Tue 18 Jul 2023 10:03:55 AM UTC Verifying microk8s is ready
+ Tue 18 Jul 2023 10:03:56 AM UTC microk8s is ready
+ microk8s addons configured
+ microk8s installation completed successfully
+ Tue 18 Jul 2023 10:03:56 AM UTC system drive is 46% full
+ Tue 18 Jul 2023 10:03:56 AM UTC data drive is 16% full
+ Tue 18 Jul 2023 10:04:02 AM UTC docker login with username LicenseKey to zapps-registry.zerto.com
+WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
+Configure a credential helper to remove this warning. See
+https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+
+Login Succeeded
+ Tue 18 Jul 2023 10:04:04 AM UTC docker pull zapps-registry.zerto.com/zvml/official/zkeycloak:2.2.3
+2.2.3: Pulling from zvml/official/zkeycloak
+Digest: sha256:2d802f56ff1a8100ac131c028a0ebedb47d5ada15f7cf4a9139b0fd4100edc7f
+Status: Image is up to date for zapps-registry.zerto.com/zvml/official/zkeycloak:2.2.3
+zapps-registry.zerto.com/zvml/official/zkeycloak:2.2.3
+ Tue 18 Jul 2023 10:04:05 AM UTC docker pull zapps-registry.zerto.com/zvml/official/zkeycloak_zkeycloak-db:2.2.3
+2.2.3: Pulling from zvml/official/zkeycloak_zkeycloak-db
+Digest: sha256:b02c4cfde4b12a0e339c7df733fb9404b96c3fb2234075724412e23ddf4278c8
+Status: Image is up to date for zapps-registry.zerto.com/zvml/official/zkeycloak_zkeycloak-db:2.2.3
+zapps-registry.zerto.com/zvml/official/zkeycloak_zkeycloak-db:2.2.3
+ Tue 18 Jul 2023 10:04:07 AM UTC docker pull zapps-registry.zerto.com/zvml/official/zkeycloak-zappliance-upgrader:1.2
+1.2: Pulling from zvml/official/zkeycloak-zappliance-upgrader
+3f4ca61aafcd: Already exists
+228cf000ffe1: Pull complete
+ce59a9e17a45: Pull complete
+097d019d4906: Pull complete
+de227a5b0d62: Pull complete
+1078317e4bbf: Pull complete
+Digest: sha256:9a81364d58dad52de41fac2dbc291b6a391dcc08c8877f288caa55a37496ece1
+Status: Downloaded newer image for zapps-registry.zerto.com/zvml/official/zkeycloak-zappliance-upgrader:1.2
+zapps-registry.zerto.com/zvml/official/zkeycloak-zappliance-upgrader:1.2
+ Tue 18 Jul 2023 10:04:12 AM UTC docker pull zapps-registry.zerto.com/zvml/official/upgrade-service:10.0.0.1637
+10.0.0.1637: Pulling from zvml/official/upgrade-service
+759700526b78: Pull complete
+cafd06d60458: Pull complete
+2266a7dff4c8: Pull complete
+c64796210f78: Pull complete
+0895466b0817: Pull complete
+5556fcf8e781: Pull complete
+3444edc3892d: Pull complete
+20bdc164485a: Pull complete
+5a6e437e3f9f: Pull complete
+c69742897b97: Pull complete
+6b2668c2fe7c: Pull complete
+Digest: sha256:19586280b19cd79d267cd38c1d481c9a648243e6962ded5952e57c6987b58706
+Status: Downloaded newer image for zapps-registry.zerto.com/zvml/official/upgrade-service:10.0.0.1637
+zapps-registry.zerto.com/zvml/official/upgrade-service:10.0.0.1637
+ Tue 18 Jul 2023 10:04:30 AM UTC docker pull zapps-registry.zerto.com/zvml/official/busybox:latest
+latest: Pulling from zvml/official/busybox
+f531cdc67389: Pull complete
+Digest: sha256:1ccc0a0ca577e5fb5a0bdf2150a1a9f842f47c8865e861fa0062c5d343eb8cac
+Status: Downloaded newer image for zapps-registry.zerto.com/zvml/official/busybox:latest
+zapps-registry.zerto.com/zvml/official/busybox:latest
+ Tue 18 Jul 2023 10:04:49 AM UTC docker pull zapps-registry.zerto.com/zvml/official/upgrade-validations:10.0.0.1637
+10.0.0.1637: Pulling from zvml/official/upgrade-validations
+759700526b78: Already exists
+cafd06d60458: Already exists
+2266a7dff4c8: Already exists
+c64796210f78: Already exists
+0895466b0817: Already exists
+5556fcf8e781: Already exists
+f8e474d66cf6: Pull complete
+911c283fdb95: Pull complete
+178016749a3e: Pull complete
+Digest: sha256:a81cc62a685bbc893a04dbfd382a6ac9e93a634bcd7b1cc6090e06701b42a201
+Status: Downloaded newer image for zapps-registry.zerto.com/zvml/official/upgrade-validations:10.0.0.1637
+zapps-registry.zerto.com/zvml/official/upgrade-validations:10.0.0.1637
+ Tue 18 Jul 2023 10:04:58 AM UTC docker pull zapps-registry.zerto.com/zvml/official/zfluentd_k8s:2.2.702
+2.2.702: Pulling from zvml/official/zfluentd_k8s
+3f4ca61aafcd: Already exists
+2c1347bf51c5: Already exists
+4a72f1f78ce7: Already exists
+ddf4af2fbbce: Already exists
+b09efec1139f: Already exists
+a3d0ebd6d341: Already exists
+aa0a435b9752: Already exists
+64eb7c9edfff: Already exists
+bfbb387f2205: Already exists
+5e71752428b4: Pull complete
+809ee5a7ea8f: Pull complete
+5e939c0445d7: Pull complete
+7c46e62d17b8: Pull complete
+3e8f51cac1a7: Pull complete
+8f3c279dd7f4: Pull complete
+c575cfeea128: Pull complete
+0cf73e462446: Pull complete
+9b619f833713: Pull complete
+98d899a794c7: Pull complete
+b30766f08932: Pull complete
+d1da290e8674: Pull complete
+fc85bd03a137: Pull complete
+31411eaa1610: Pull complete
+51c541da3758: Pull complete
+Digest: sha256:ea5cc14544c71341a25e4ec4382349152db00a63c7a1e6f95ff50432a611c4a7
+Status: Downloaded newer image for zapps-registry.zerto.com/zvml/official/zfluentd_k8s:2.2.702
+zapps-registry.zerto.com/zvml/official/zfluentd_k8s:2.2.702
+ pull all images done
+ Tue 18 Jul 2023 10:05:33 AM UTC docker logout username LicenseKey from zapps-registry.zerto.com
+Removing login credentials for zapps-registry.zerto.com
+ Tue 18 Jul 2023 10:05:33 AM UTC About to run Upgrade Validations
+2023-07-18T10:05:34.225Z | INFO | PreUpgradeValidations.DbAccessor | Clear open database connections started |
+2023-07-18T10:05:34.232Z | INFO | PreUpgradeValidations.DbAccessor | Clear open database connections completed |
+2023-07-18T10:05:34.232Z | INFO | PreUpgradeValidations.DbAccessor | Read storage properties started |
+2023-07-18T10:05:34.237Z | INFO | Zerto.Infra.Storage.Configuration.PersistentStorageProperties | called, file path = /app/storage/storage_properties.xml |
+2023-07-18T10:05:34.363Z | INFO | Zerto.Infra.Communication.Factories.InfraOSUtilsServiceLocator | Data protection source = FileSystem |
+2023-07-18T10:05:34.363Z | INFO | Zerto.Infra.Communication.Factories.InfraOSUtilsServiceLocator | Certificate Provider of type = Zerto.Infra.Communication.Security.SensitiveData.DataProtectionFileSystemCertificateProvider |
+2023-07-18T10:05:34.365Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.365Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.394Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.DataProtectionFileSystemCertificateProvider | Read data protection certificate file and caching it |
+2023-07-18T10:05:34.394Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.DataProtectionFileSystemCertificateProvider | Successfully read certificate 3983 bytes from /run/secrets/data_protector_certificate.pfx |
+2023-07-18T10:05:34.587Z | INFO | PreUpgradeValidations.DbAccessor | Read storage properties completed |
+2023-07-18T10:05:34.587Z | INFO | PreUpgradeValidations.Program | About to run Upgrade Validations |
+2023-07-18T10:05:34.613Z | INFO | Zerto.Storage.Factory.RepositoryFactory | create nHibernate repository with provider = SqlServer, connection string = data source=zvm-db;initial catalog=zvm_db;user id=sa;password=*****;connect timeout=60 |
+2023-07-18T10:05:34.788Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.788Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.788Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.SensitiveDataEncryptorLocator | encryptor is null |
+2023-07-18T10:05:34.788Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.788Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.788Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.788Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:34.794Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.SensitiveDataEncryptorLocator | Instance set |
+2023-07-18T10:05:34.836Z | INFO | Zerto.Storage.Checkpoints.Repositories.Partitioned.Maintenance.CheckpointsTablesMaintainerJob | Initialize CheckpointsTablesMaintainerJob with intervals: truncateSecondsInterval: 3600, storeNonActiveSecondsInterval: 900, diluteSecondsInterval: 120, deleteVpgsSecondsInterval: 60. loopSleepSecondsInterval: 10 |
+2023-07-18T10:05:36.759Z | INFO | Zerto.Storage.NHibernate.NhSessionManager | create session factory successfully |
+2023-07-18T10:05:36.964Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:36.964Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:05:36.964Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.DbKeyPathProvider | Db Key Path: /app/Secrets/db.dat |
+2023-07-18T10:05:36.964Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.FileSystemKeyRepository | dbKeyPath:/app/Secrets/db.dat |
+2023-07-18T10:05:36.964Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.FileSystemKeyRepository | TraceDbKeyStats: dbKeyPath: /app/Secrets/db.dat, creationTimeUtc: 10/11/2022 13:44:54, lastAccessTimeUtc: 07/18/2023 09:53:34, lastWriteTimeUtc: 10/11/2022 13:44:54, dbKeyBytesLength: 164,  |
+2023-07-18T10:05:37.092Z | INFO | Zerto.Storage.NHibernate.Repositories.NhHashMapperRepository |  elapsed 117.3171 MS |
+2023-07-18T10:05:37.092Z | INFO | Zerto.Storage.NHibernate.Repositories.NhHashMapperRepository | got 80 bytes |
+2023-07-18T10:05:37.095Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Connecting: Zerto.Zvm.Common.VirtualizationSettings.VCenterCredentials |
+2023-07-18T10:05:37.098Z | INFO | assertLogger | AssertServices panic on assert: True |
+2023-07-18T10:05:37.101Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | Creating VCenterProxy |
+2023-07-18T10:05:37.121Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | VCenterProxy created |
+2023-07-18T10:05:37.121Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | host=10.13.1.140 |
+2023-07-18T10:05:37.121Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | setting up certificate policy callback |
+2023-07-18T10:05:37.121Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | done setting up |
+2023-07-18T10:05:37.124Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:05:37.124Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:05:37.130Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotAuthenticated to NotConnected |
+2023-07-18T10:05:37.130Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | Creating VCenterProxy |
+2023-07-18T10:05:37.130Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | VCenterProxy created |
+2023-07-18T10:05:37.130Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector started |
+2023-07-18T10:05:37.135Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:05:37.135Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:05:37.135Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connecting |
+2023-07-18T10:05:37.136Z | INFO | VCenterConnectionLayer.Basics | Connecting to vCenter... |
+2023-07-18T10:05:37.136Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Started  |
+2023-07-18T10:05:38.326Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | pbm exist: True |
+2023-07-18T10:05:38.326Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Connect to pbm:False Cookie:  PbmCookie: null |
+2023-07-18T10:05:38.365Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm Connected:True |
+2023-07-18T10:05:38.365Z | INFO | VCenterConnectionLayer.Basics | Connected |
+2023-07-18T10:05:38.365Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connected |
+2023-07-18T10:05:38.374Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotConnected to Connected |
+2023-07-18T10:05:38.374Z | INFO | Zerto.Zvm.HypervisorServices.Connector.HypervisorIdentifierProvider | initialize server identifier from connection. (e2a28ca2-8237-4cbe-ad06-b5bc99e78c15) |
+2023-07-18T10:05:38.374Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Stored server identifier e2a28ca2-8237-4cbe-ad06-b5bc99e78c15 |
+2023-07-18T10:05:38.377Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Was disconnected.  Reconnection succeeded |
+2023-07-18T10:05:38.377Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:05:38.381Z | INFO | ZTimerLogger | ZTimer started Timer Id :1, Timer name : vCenter Connector  thread Timer GUID: 1983b792-939b-49d3-b4ac-a350b299d85e |
+2023-07-18T10:05:38.381Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Reconnection thread started |
+2023-07-18T10:05:38.381Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:05:38.381Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:05:38.465Z | INFO | Zerto.Storage.NHibernate.Repositories.Caches.IdentifierMapperRepositoryCache | Loading 206 rows from repository to cache |
+2023-07-18T10:05:38.465Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Checking for Identifier Mappper corrupted entites |
+info: UpgradeService.Accessors.ZvmService.ZvmServiceApiClient[0]
+      GET operation v1/transmitter/configuration/isEnabled
+info: UpgradeService.Accessors.ZvmService.ZvmServiceApiClient[0]
+      GET operation v1/transmitter/configuration/isEnabled complete.
+2023-07-18T10:05:38.870Z | INFO | Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient | Query URL = https://zvm-control.api.zerto.com/v1/features/identifierMapperUpgradeValidation?siteIdentifier=a2e818cc-8aaa-4c4b-8c45-0ea108ba3dd0 |
+2023-07-18T10:05:41.877Z | ERROR | Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient | Failed to get response for query = https://zvm-control.api.zerto.com/v1/features/identifierMapperUpgradeValidation?siteIdentifier=a2e818cc-8aaa-4c4b-8c45-0ea108ba3dd0 | System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Zerto.Infra.Communication.Rest.RestFulClient.GetResponseFrom(HttpWebRequest request) in /src/dev/system/infra/cs/Zerto.Infra.Communication/Rest/RestFulClient.cs:line 196
+   at Zerto.Infra.Communication.Rest.RestFulClient.ExecuteWebRequest(String url, String method, String json) in /src/dev/system/infra/cs/Zerto.Infra.Communication/Rest/RestFulClient.cs:line 112
+   at Zerto.Infra.Communication.Rest.RestFulClient.Get(String url) in /src/dev/system/infra/cs/Zerto.Infra.Communication/Rest/RestFulClient.cs:line 75
+   at Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient.GetQueryResponse(String query) in /src/dev/system/Zerto.Framework/Zerto.Framework.SaasClient/EnabledFeatures/EnabledFeaturesApiClient.cs:line 78
+   at Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient.GetIsFeatureEnabledForSite(String featureName, Guid siteIdentifierGuid) in /src/dev/system/Zerto.Framework/Zerto.Framework.SaasClient/EnabledFeatures/EnabledFeaturesApiClient.cs:line 38
+   at PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator.IsSaasApprovedValidationForSite(SiteIdentifier siteIdentifier) in /src/dev/tools/Production/Upgrade/Jobs/PreUpgradeValidations/Validations/Platform/VcUpgradeIdentifierMapperCorruptedEntitiesValidator.cs:line 215
+   at PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator.ValidateForCorruptedEntities() in /src/dev/tools/Production/Upgrade/Jobs/PreUpgradeValidations/Validations/Platform/VcUpgradeIdentifierMapperCorruptedEntitiesValidator.cs:line 80
+2023-07-18T10:05:41.877Z | WARN | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Failed to get response if feature identifierMapperUpgradeValidation is enabled. Feature will be disabled for site a2e818cc-8aaa-4c4b-8c45-0ea108ba3dd0 | System.Net.WebException: The operation has timed out.
+   at System.Net.HttpWebRequest.GetResponse()
+   at Zerto.Infra.Communication.Rest.RestFulClient.GetResponseFrom(HttpWebRequest request) in /src/dev/system/infra/cs/Zerto.Infra.Communication/Rest/RestFulClient.cs:line 196
+   at Zerto.Infra.Communication.Rest.RestFulClient.ExecuteWebRequest(String url, String method, String json) in /src/dev/system/infra/cs/Zerto.Infra.Communication/Rest/RestFulClient.cs:line 112
+   at Zerto.Infra.Communication.Rest.RestFulClient.Get(String url) in /src/dev/system/infra/cs/Zerto.Infra.Communication/Rest/RestFulClient.cs:line 75
+   at Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient.GetQueryResponse(String query) in /src/dev/system/Zerto.Framework/Zerto.Framework.SaasClient/EnabledFeatures/EnabledFeaturesApiClient.cs:line 78
+   at Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient.GetIsFeatureEnabledForSite(String featureName, Guid siteIdentifierGuid) in /src/dev/system/Zerto.Framework/Zerto.Framework.SaasClient/EnabledFeatures/EnabledFeaturesApiClient.cs:line 38
+   at PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator.IsSaasApprovedValidationForSite(SiteIdentifier siteIdentifier) in /src/dev/tools/Production/Upgrade/Jobs/PreUpgradeValidations/Validations/Platform/VcUpgradeIdentifierMapperCorruptedEntitiesValidator.cs:line 215
+   at PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator.ValidateForCorruptedEntities() in /src/dev/tools/Production/Upgrade/Jobs/PreUpgradeValidations/Validations/Platform/VcUpgradeIdentifierMapperCorruptedEntitiesValidator.cs:line 80
+2023-07-18T10:05:41.877Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | This site is not part of identifier mapper corrupted entities validation |
+2023-07-18T10:05:41.877Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Setting result 'False' of IsFixerEnabled to DB |
+2023-07-18T10:05:41.900Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | Connecting: Zerto.Zvm.Common.VirtualizationSettings.VCenterCredentials |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | host=10.13.1.140 |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:05:41.900Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotAuthenticated to NotConnected |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | Creating VCenterProxy |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | VCenterProxy created |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector started |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:05:41.900Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:05:41.900Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connecting |
+2023-07-18T10:05:41.900Z | INFO | VCenterConnectionLayer.Basics | Connecting to vCenter... |
+2023-07-18T10:05:41.900Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Started  |
+2023-07-18T10:05:42.078Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | pbm exist: True |
+2023-07-18T10:05:42.078Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Connect to pbm:False Cookie:  PbmCookie: null |
+2023-07-18T10:05:42.096Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm Connected:True |
+2023-07-18T10:05:42.096Z | INFO | VCenterConnectionLayer.Basics | Connected |
+2023-07-18T10:05:42.096Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connected |
+2023-07-18T10:05:42.103Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotConnected to Connected |
+2023-07-18T10:05:42.103Z | INFO | Zerto.Zvm.HypervisorServices.Connector.HypervisorIdentifierProvider | initialize server identifier from connection. (e2a28ca2-8237-4cbe-ad06-b5bc99e78c15) |
+2023-07-18T10:05:42.103Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Stored server identifier e2a28ca2-8237-4cbe-ad06-b5bc99e78c15 |
+2023-07-18T10:05:42.104Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Was disconnected.  Reconnection succeeded |
+2023-07-18T10:05:42.104Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:05:42.104Z | INFO | ZTimerLogger | ZTimer started Timer Id :2, Timer name : vCenter Connector  thread Timer GUID: 14849ffe-faf0-4e7a-a0e2-1ffe2cdc5d30 |
+2023-07-18T10:05:42.104Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Reconnection thread started |
+2023-07-18T10:05:42.104Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:05:42.104Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:05:42.131Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | Unregistering Plugin |
+2023-07-18T10:05:48.404Z | INFO | VCenterConnectionLayer.Basics | SessionIsActive == True |
+2023-07-18T10:05:48.404Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm is Connected . Session Cookie: 2438ca4f-0510-4e75-8adc-943f90479537 PbmCookie: 2438ca4f-0510-4e75-8adc-943f90479537 |
+2023-07-18T10:05:48.404Z | INFO | VCenterConnectionLayer.Basics | Pbm is connected = True |
+2023-07-18T10:05:48.404Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenter remains connected |
+2023-07-18T10:05:48.404Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:05:50.660Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | Unregistered Plugin |
+2023-07-18T10:05:50.660Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | registering Plugin |
+2023-07-18T10:05:50.682Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | About to register plugin with privileges: zerto.com.zerto.plugin.ManageVRA, zerto.com.zerto.plugin.ManageCloudConnector, zerto.com.zerto.plugin.ManageSite, zerto.com.zerto.plugin.TestFailover, zerto.com.zerto.plugin.LiveFailoverMove, zerto.com.zerto.plugin.Viewer, zerto.com.zerto.plugin.ManageVPG |
+2023-07-18T10:05:52.037Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryBeforeCommit description=The VPG is waiting to be committed or rolled back  |
+2023-07-18T10:05:52.116Z | INFO | VCenterConnectionLayer.Basics | SessionIsActive == True |
+2023-07-18T10:05:52.116Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm is Connected . Session Cookie: 38528066-49d0-4450-b00d-78c52105305d PbmCookie: 38528066-49d0-4450-b00d-78c52105305d |
+2023-07-18T10:05:52.116Z | INFO | VCenterConnectionLayer.Basics | Pbm is connected = True |
+2023-07-18T10:05:52.116Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenter remains connected |
+2023-07-18T10:05:52.116Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:05:52.469Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToZvmConnection description=The Zerto Virtual Manager is not connected to a remote site Zerto Virtual Manager  |
+2023-07-18T10:05:52.496Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToZvmSync description=The Zerto Virtual Managers are syncing with each other  |
+2023-07-18T10:05:52.520Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToZvmVpgsSync description=The Zerto Virtual Manager has VPGs which are unsynchronized with a remote Zerto Virtual Manager  |
+2023-07-18T10:05:52.555Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToVraConnection description=The Zerto Virtual Manager is not connected to a VRA  |
+2023-07-18T10:05:52.588Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToVraUnsyncedVpgs description=The Zerto Virtual Manager has VPGs which are unsynchronized with a VRA  |
+2023-07-18T10:05:52.625Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraDidntReceiveIp description=The VRA didn't receive an IP  |
+2023-07-18T10:05:52.652Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraIpChanged description=The VRA IP changed  |
+2023-07-18T10:05:52.685Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraToVraConnection description=A VRA is not connected to a remote site VRA  |
+2023-07-18T10:05:52.746Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Datastore description=The datastore is not accessible  |
+2023-07-18T10:05:52.776Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.License description=There is a problem with the license  |
+2023-07-18T10:05:52.812Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BillingAlertName1 description=The ZVM is expected to send  usage information for billing purposes but failed to do so  |
+2023-07-18T10:05:52.853Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LastTest description=The VPG has not been tested or was tested a long time ago  |
+2023-07-18T10:05:52.894Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupMissingConfiguration description=The VPG has a missing configuration  |
+2023-07-18T10:05:52.928Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupStoppingFailoverTest description=The System is trying to stop the Failover Test of the VPG, but cannot complete this task.  |
+2023-07-18T10:05:52.953Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupRollingBackFailoverLive description=The System is trying to stop the Failover operation, but cannot complete this task.  |
+2023-07-18T10:05:52.982Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupRollingBackMove description=The System is trying to stop the Move operation, but cannot complete this task.  |
+2023-07-18T10:05:53.010Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupError description=The VPG has an error, for example, if a storage error occurs while recovering from a VRA crash  |
+2023-07-18T10:05:53.042Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Elastic VDC - invalid PVDC configuration description=Provider VDC was changed and now contain an invalid PVDC configuration issue might be related to a resource pool recently added  |
+2023-07-18T10:05:53.072Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.UndoRollbackFailed description=A rollback failed  |
+2023-07-18T10:05:53.106Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RpoWarning description=The recovery RPO is not being met. The current RPO is more than the target RPO  |
+2023-07-18T10:05:53.139Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RpoError description=The recovery RPO is not being met. The current RPO is more than the target RPO  |
+2023-07-18T10:05:53.171Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BacklogWarning description=Journal history problem. The amount of history is less than it should be  |
+2023-07-18T10:05:53.203Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BacklogError description=Journal history problem. The amount of history is less than it should be  |
+2023-07-18T10:05:53.243Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VirtualMachine description=For internal use only  |
+2023-07-18T10:05:53.295Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.UninstalledHost description=The host has no VRA installed  |
+2023-07-18T10:05:53.336Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.HostDisconnected description=The host is disconnected  |
+2023-07-18T10:05:53.373Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.FailureDuringReflectionCollection description=Failure during reflection collection  |
+2023-07-18T10:05:53.412Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryDataStoreFull description=The recovery datastore or journal is full  |
+2023-07-18T10:05:53.449Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraProtectedVolume description=VRA protected volume error  |
+2023-07-18T10:05:53.489Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraLogVolume description=VRA journal volume error  |
+2023-07-18T10:05:53.509Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraTargetVolume description=Recovery volume error for a VRA  |
+2023-07-18T10:05:53.528Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraCloneVolume description=A VRA clone volume error  |
+2023-07-18T10:05:53.548Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DisconnectedVCenter description=vCenter Server disconnection  |
+2023-07-18T10:05:53.568Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VmIdentifierMapperInvalidMapping description=Invalid vm/s identifier mapping exists. Contact Zerto Support  |
+2023-07-18T10:05:53.589Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedAppAwareVmAliasIdIsMissing description=Protected App aware VM AliasId is missing  |
+2023-07-18T10:05:53.611Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DuplicateMacAddress description=MAC Address conflict  |
+2023-07-18T10:05:53.634Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CriticalCheckpoint description=Critical checkpoint: Only a few minutes of checkpoints are left in the journal for the VPG  |
+2023-07-18T10:05:53.655Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VCDReflection description=A vCloud Director problem with collecting the reflection  |
+2023-07-18T10:05:53.676Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VCDConnector description=vCloud Director connection problem  |
+2023-07-18T10:05:53.696Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CloudConnector description=A problem with the Zerto Cloud Connector, for example, it is powered off  |
+2023-07-18T10:05:53.717Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVolumeSizeChanged description=For internal use only  |
+2023-07-18T10:05:53.795Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryDataStoreLowFreeSpace description=The recovery datastore has less than 1GB of free space  |
+2023-07-18T10:05:53.817Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VRARegistrationFailed description=Problem with an ESX/i upgrade  |
+2023-07-18T10:05:53.841Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostVm description=A VRA or shadow VRA was deleted, leaving a ghost VRA  |
+2023-07-18T10:05:53.865Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostVolume description=A journal or recovery volume was deleted, leaving a ghost volume  |
+2023-07-18T10:05:53.887Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostUnknownVolume description=A journal or recovery volume was added, but the volume manager is not aware of it  |
+2023-07-18T10:05:53.914Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostSystemDisk description=A system disk was deleted, leaving a ghost volume  |
+2023-07-18T10:05:53.951Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Ghost CloudConnector description=A Zerto Cloud Connector was deleted, leaving a ghost cloud connector  |
+2023-07-18T10:05:53.973Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.PeerZvmCompatibility description=The paired remote Zerto Virtual Manager is a different version that cannot work with the local Zerto Virtual Manager  |
+2023-07-18T10:05:53.999Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.HostPasswordChanged description=The password used by the VRA to access the host ESX/ESXi is no longer valid  |
+2023-07-18T10:05:54.019Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ResourcePoolMissingError description=Target resource pool cannot be found for VPG  |
+2023-07-18T10:05:54.038Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ResourcePoolInsufficientError description=Resource Pool does not have enough resource to support VPG  |
+2023-07-18T10:05:54.059Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DiskboxPoweredOff description=Diskbox is powered off  |
+2023-07-18T10:05:54.077Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVolumeAndMirrorSizeMismatch description=Protected volume and recovery volume size mismatch  |
+2023-07-18T10:05:54.097Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraPoweredOff description=VRA is powered off  |
+2023-07-18T10:05:54.117Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraBallooning description=On 4.x host: VRA on host does not have enough resources. On 5.x host: VRA on host does not have enough reserved memory  |
+2023-07-18T10:05:54.137Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZertoGenericAlert description=Zerto generic alert - check Zerto UI for details  |
+2023-07-18T10:05:54.173Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AssertAlert description=Zerto assert alert - internal problem in Zerto Virtual Manager  |
+2023-07-18T10:05:54.205Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LowDiskFreeSpace description=The disk on which the Zerto Virtual Manager is installed is low on space  |
+2023-07-18T10:05:54.224Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VPG Mirror table inconsistency description=Found VPG that is dependent on missing mirror id  |
+2023-07-18T10:05:54.243Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupPaused description=The VPG protection has been paused  |
+2023-07-18T10:05:54.262Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryStorageProfileDisabled description=Recovery storage profile is disabled  |
+2023-07-18T10:05:54.283Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryStorageProfileNotFound description=Recovery storage profile is not found  |
+2023-07-18T10:05:54.315Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryProviderVDCStorageProfileDisabled description=Recovery provider vDC storage profile is disabled  |
+2023-07-18T10:05:54.343Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryProviderVDCStorageProfileNotFound description=Recovery provider vDC storage profile is not found  |
+2023-07-18T10:05:54.366Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.NoMatchingStorageProfile description=Could not find matching recovery storage profile  |
+2023-07-18T10:05:54.385Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryVcenterStorageProfileMissing description=Storage profile not found in underlying vCenter Server  |
+2023-07-18T10:05:54.406Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryDatastoreNotInStorageProfile description=Missing recovery datastores in recovery storage profile  |
+2023-07-18T10:05:54.432Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MissingOrgVdcNetworkMapping description=A network mapping for Org vDC for the VPG is missing  |
+2023-07-18T10:05:54.454Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VpgVappBrokenReflection description=Protected vApp is corrupted on VCD. Make sure all vApp VMs are powered on and running.  |
+2023-07-18T10:05:54.483Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MissingRecoveryOrgVdcNetworkMapping description=A network mapping for the recovery site provider Org vDC is missing  |
+2023-07-18T10:05:54.522Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BrokenOrgVdcNetwork description=A network for Org vDC for the VPG is broken  |
+2023-07-18T10:05:54.551Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.UnprotectedVMsError description=One or more of the virtual machines in the VPG are not protected, for example a VM was vMotioned to a host without a VRA  |
+2023-07-18T10:05:54.609Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ServiceProfileMissing description=The service profile for the VPG cannot be found  |
+2023-07-18T10:05:54.696Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VPGOutOfZorgOnProtected description=The VPG belongs to a ZORG but contains resources outside of the ZORG  |
+2023-07-18T10:05:54.723Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VPGOutOfZorgOnRecovery description=The VPG belongs to a ZORG but requires resources outside of the ZORG  |
+2023-07-18T10:05:54.743Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.JournalLimitReached description=The journal or scratch volumes used in testing and before committing have reached the hard limit set for the journal  |
+2023-07-18T10:05:54.764Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionFailsConstantlyWarning description=Scheduled retention process failed for the last 3 days  |
+2023-07-18T10:05:54.796Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionFailsConstantlyError description=Scheduled retention process failed for the last 7 days  |
+2023-07-18T10:05:54.821Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LtrVpgStatusAlertError description=Scheduled retention process failed  |
+2023-07-18T10:05:54.844Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LtrMirrorStatusAlertError description=Protection group not ready for LTR  |
+2023-07-18T10:05:54.886Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetDisconnected description=The repository is not accessible by the DSS  |
+2023-07-18T10:05:54.918Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetIsFull description=The repository is full  |
+2023-07-18T10:05:54.984Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetIsGettingFull description=The repository is getting full  |
+2023-07-18T10:05:55.034Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VbaDisconnected description=The VBA service is not connected to the Zerto Virtual Manager  |
+2023-07-18T10:05:55.062Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetIsNone description=The repository cannot be found  |
+2023-07-18T10:05:55.095Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RdmWithOddNumberOfBlocks description=The RDM has an odd number of blocks  |
+2023-07-18T10:05:55.113Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VirtualMachineHardwareVersionMismatch description=The hardware version of one or more of the protected VMs is not supported by the recovery host  |
+2023-07-18T10:05:55.136Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.NewVersionAvailable description=A new ZVM version is available for upgrade.  |
+2023-07-18T10:05:55.156Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Win2003VmDuringReplicationToVCD description=Windows 2003 VM found during relicating to VCD => Windows 2003 VM in VPG that is recovering to vCD  |
+2023-07-18T10:05:55.194Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryOrgVdcStoragePolicyPerVolumeNotSupported description=Storage Policy per volume is not supported in OrgVDCs with FAST Provisioning enabled.  |
+2023-07-18T10:05:55.214Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AutoProtectFailure description=failed to be automatically protect. Make sure to remove tagged VMs and protect manually.  |
+2023-07-18T10:05:55.235Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AutoProtectTagMismatch description=Tag mismatch. Either remove the tag or unprotect the VM  |
+2023-07-18T10:05:55.257Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScratchDatastoreUnreachable description=Datastore is not reachable. Possible reasons: datastore doesn't exist or datastore is not in the cluster.  |
+2023-07-18T10:05:55.277Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LicenseServerDisconnected description=Site is disconnected from license server  |
+2023-07-18T10:05:55.298Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DisconnectedAWSName description=A disconnection to AWS  |
+2023-07-18T10:05:55.320Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CloudStorageRemoved description=Trying to replicate into a cloud storage that was removed  |
+2023-07-18T10:05:55.340Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureVraVmCloudStorageRemovedName description=Azure VRA VM cloud storage removed  |
+2023-07-18T10:05:55.359Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AwsInstancesQuotaExceeded description=Trying to create Aws instance above quota  |
+2023-07-18T10:05:55.378Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.PublicCloudHealthcheckError description=Zerto AWS Snapshot Adapter is not reachable. Please contact Zerto support.  |
+2023-07-18T10:05:55.397Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.OrchestratorReset description=Zerto Orchestrator is in Reset state  |
+2023-07-18T10:05:55.415Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScaleSetCreation description=Failure to create Scaleset  |
+2023-07-18T10:05:55.434Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScaleSetQueuesCreation description=Failure to create Scaleset Queues  |
+2023-07-18T10:05:55.453Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.OrchestratorWorkersCreation description=Failure to create Scaleset workers  |
+2023-07-18T10:05:55.476Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.OrchestratorWorkersPlacement description=Failure to place Scaleset workers on a specific subnet  |
+2023-07-18T10:05:55.499Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MissingNetworksForVMmsInVPG description=Non Existed Network found between VMs Failover Networks => The recovery network does not exist  |
+2023-07-18T10:05:55.535Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MisconfiguredSanPolicyOnCrossReplicatedWinVmName description=The Microsoft default SAN policy might cause some protected volumes to become offline upon recovery  |
+2023-07-18T10:05:55.568Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VirtualMachineHasZeroSizeVolumeName description=Virtual Machine  has at least one volume of size 0  |
+2023-07-18T10:05:55.591Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVmScsiMismatch description=Values collected from the hypervisor and the VM manager do not match.  |
+2023-07-18T10:05:55.617Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVmWithUnkownOS description=Vm with unkown OS  |
+2023-07-18T10:05:55.639Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CheckHost description=A host is unavailable, possibly due to incompatible version or native state.  |
+2023-07-18T10:05:55.671Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.FileRestoreComponentNotAvailable description=The file restore component is not available  |
+2023-07-18T10:05:55.695Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraDiskboxScsiGuidMismatch description=Values collected from the VRA hypervisor and the VM manager do not match.  |
+2023-07-18T10:05:55.716Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmPsModuleNotFoundAtHos description=Hyper-V PS module not found on host  |
+2023-07-18T10:05:55.740Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmFailedToCreateFolderAtHost description=Failed to create folder at host  |
+2023-07-18T10:05:55.765Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmFailedToCheckIfPsModuleInstalled description=Failed to check if Hyper-V PS module is installed on host  |
+2023-07-18T10:05:55.784Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmFailedToUploadScriptToHost description=Failed to upload Powershell scripts to host  |
+2023-07-18T10:05:55.807Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmHostIsNotResponding description=Host is not responding  |
+2023-07-18T10:05:55.827Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.HostInMaintenanceMode description=Host is in maintenance mode  |
+2023-07-18T10:05:55.851Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraServiceIsDown description=Vra service is down  |
+2023-07-18T10:05:55.871Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmTweaksLoadFailed description=Error occured during loading Zvm tweaks  |
+2023-07-18T10:05:55.890Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZVM lost access to Azure description=Zerto Virtual Manager has lost access to Azure. Use "Reconfigure Zerto Virtual Manager" option in Diagnostics Tool to solve this issue.  |
+2023-07-18T10:05:55.967Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Vm was removed from the VPG description=Vm was removed from the VPG  |
+2023-07-18T10:05:55.991Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureVraVmDeletedName description=Azure VRA VM was deleted  |
+2023-07-18T10:05:56.015Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureVraUpgradeFailedOnZcaUpgrade description=Azure VRA Upgrade failed during ZCA upgrade  |
+2023-07-18T10:05:56.043Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Fail install agent description=Failed install agent on host  |
+2023-07-18T10:05:56.070Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AgentDisconnect description=agent not connected to zvm  |
+2023-07-18T10:05:56.090Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Datapath description=There is a problem in the VRA  |
+2023-07-18T10:05:56.115Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RansomwareAttackName description=A ransomware attack was detected  |
+2023-07-18T10:05:56.136Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureSharedDisksAreNotExcluded description=Azure Shared Disks Are Not Excluded  |
+2023-07-18T10:05:56.157Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | registered Plugin |
+2023-07-18T10:05:56.157Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPlatformCompatibilityChecker | Starting validation |
+2023-07-18T10:05:56.162Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPlatformCompatibilityChecker | Platform is compatible with installation |
+2023-07-18T10:05:56.162Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPeerCompatibilityChecker | Starting peer zvm compatibility upgrade Validation |
+2023-07-18T10:05:56.162Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPeerCompatibilityChecker | All peer zvms are compatible |
+2023-07-18T10:05:56.162Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPeerCompatibilityChecker | Successfully validated peer zvm compatibility |
+2023-07-18T10:05:56.162Z | INFO | PreUpgradeValidations.Validations.ZvmNode.DatabaseConfigurationChecker | Starting validation |
+2023-07-18T10:05:56.188Z | INFO | PreUpgradeValidations.Validations.ZvmNode.DatabaseConfigurationChecker | Validation passed - Not part of Availability Group |
+2023-07-18T10:05:56.188Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | Checking ZVM Upgrade is possible |
+2023-07-18T10:05:56.195Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | The target Zerto version is compatible with the existing Zerto version. |
+2023-07-18T10:05:56.205Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | All VRAs are compatible |
+2023-07-18T10:05:56.205Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | Upgrade is possible |
+2023-07-18T10:05:56.205Z | INFO | PreUpgradeValidations.Program | All Validations finished successfully |
+ Tue 18 Jul 2023 10:05:56 AM UTC All Upgrade Validations finished successfully
+
+||INFO|1|Zkeycloak_2_2_2|ZKeycloak upgrade to version 2.2.2 started
+||INFO|1|Zkeycloak_2_2_2|KEYCLOAK_USER || KEYCLOAK_PASSWORD wasn't sent by the user, hence skipping on creating the management service account
+||INFO|1|Zkeycloak_2_2_2|Get zerto-client from Zkeycloak nuget
+||INFO|1|Zkeycloak_2_2_2|Master token is null or it about to expired
+||INFO|11|Zerto.Zkeycloak.Operations.MasterRealm.AccessTokenProvider|Keycloak token received for client management with signed-jwt authentication in master realm
+||INFO|12|Zkeycloak_2_2_2|Deserialize client roles from JSON file
+||INFO|8|Zkeycloak_2_2_2|Role 'ZertoPrivilege_FileLevelRestoreDownload' already exists in 'Zerto client' client
+||INFO|12|Zkeycloak_2_2_2|Role 'ZertoPrivilege_FileLevelRestoreToProduction' already exists in 'Zerto client' client
+||INFO|8|Zkeycloak_2_2_2|Role 'ZertoPrivilege_TestFailover' already exists in 'Zerto client' client
+||INFO|13|Zkeycloak_2_2_2|Role 'ZertoPrivilege_LiveFailoverMove' already exists in 'Zerto client' client
+||INFO|13|Zkeycloak_2_2_2|Role 'ZertoPrivilege_ManageLocalVpg' already exists in 'Zerto client' client
+||INFO|12|Zkeycloak_2_2_2|Role 'ZertoPrivilege_ManageSite' already exists in 'Zerto client' client
+||INFO|13|Zkeycloak_2_2_2|Role 'ZertoPrivilege_ManageRemoteVpg' already exists in 'Zerto client' client
+||INFO|8|Zkeycloak_2_2_2|Role 'ZertoPrivilege_Viewer' already exists in 'Zerto client' client
+||INFO|13|Zkeycloak_2_2_2|Role 'ZertoPrivilege_ManageCloudConnector' already exists in 'Zerto client' client
+||INFO|8|Zkeycloak_2_2_2|Role 'ZertoPrivilege_ManageVRA' already exists in 'Zerto client' client
+||INFO|12|Zkeycloak_2_2_2|Role 'ZertoRole_Admin' already exists in 'Zerto client' client
+||INFO|12|Zkeycloak_2_2_2|Role 'ZertoRole_Builder' already exists in 'Zerto client' client
+||INFO|12|Zkeycloak_2_2_2|Role 'ZertoRole_User' already exists in 'Zerto client' client
+||INFO|8|Zkeycloak_2_2_2|Role 'ZertoRole_FileLevelRestoreOperator' already exists in 'Zerto client' client
+||INFO|8|Zkeycloak_2_2_2|Role 'ZertoRole_Viewer' already exists in 'Zerto client' client
+||INFO|8|Zkeycloak_2_2_2|Start creating Domain Admin Service Account for zerto realm
+||INFO|12|Zkeycloak_2_2_2|Client 'domain-admin' has already been created
+||INFO|12|Zkeycloak_2_2_2|User found username is: service-account-domain-admin
+||INFO|12|Zkeycloak_2_2_2|Found admins group '3a03ff9f-0534-4f8e-9570-0406688df1fd',username:'admins'
+||INFO|12|Zkeycloak_2_2_2|User with userID: '6a2ed52c-7527-42ed-8234-500621559eb2' ,username:'service-account-domain-admin' already exist in group id: '3a03ff9f-0534-4f8e-9570-0406688df1fd' therefore skipping
+||INFO|12|Zkeycloak_2_2_2|Get zerto-client from Zkeycloak nuget
+||INFO|12|Zkeycloak_2_2_2|Update zerto-client started
+||INFO|11|Zkeycloak_2_2_2|Update zerto-client completed
+||INFO|11|Zkeycloak_2_2_2|ZKeycloak upgrade to version 2.2.2 completed successfully
+ Tue 18 Jul 2023 10:05:59 AM UTC Downloading upgrade bundle. This operation may take a few minutes
+Initializing download: https://zertodownloads.s3.amazonaws.com/myz_Zerto/ZVML_Upgarde/bundle_vc_10.0.0.1712.tar.gz
+File size: 3.72825 Gigabyte(s) (4003177460 bytes)
+Opening output file /opt/zerto/zvr/upgrade-files/bundle_vc_10.0.0.1712.tar.gz
+Starting download
+
+Connection 6 finished
+Connection 4 finished
+Connection 2 finished
+Connection 7 finished
+Connection 3 finished
+Connection 1 finished
+Connection 0 finished
+Connection 5 finished
+[100%] [.....................................7............] [  18.9MB/s] [00:00]Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Unable to connect to server zertodownloads.s3.amazonaws.com:443: Name or service not known
+Connection 3 finished
+Connection 5 finished
+Connection 4 finished
+Connection 6 finished
+Connection 0 finished
+Connection 1 finished
+Connection 2 finished
+Connection 7 finished
+Connection 4 finished
+Connection 6 finished
+Connection 5 finished
+Connection 3 finished
+Connection 1 finished
+Connection 0 finished
+Connection 7 finished
+
+Downloaded 3.72825 Gigabyte(s) in 3:43 minute(s). (17484.62 KB/s)
+Initializing download: https://zertodownloads.s3.amazonaws.com/myz_Zerto/ZVML_Upgarde/bundle_vc_10.0.0.1712.tar.gz.sig
+File size: 384 byte(s) (384 bytes)
+Opening output file /opt/zerto/zvr/upgrade-files/bundle_vc_10.0.0.1712.tar.gz.sig
+Starting download
+
+[100%] [..................................................] [ 959.0B/s]
+
+Downloaded 384 byte(s) in 0 second(s). (0.94 KB/s)
+ Upgrade bundle downloaded successfully
+ Tue 18 Jul 2023 10:09:47 AM UTC Creating host command directories
+ Tue 18 Jul 2023 10:09:47 AM UTC creating host command service files
+ Tue 18 Jul 2023 10:09:47 AM UTC creating host command executer file
+ Tue 18 Jul 2023 10:09:47 AM UTC starting host command service
+Created symlink /etc/systemd/system/multi-user.target.wants/file_watcher.path → /etc/systemd/system/file_watcher.path.
+Created symlink /etc/systemd/system/multi-user.target.wants/host_command.service → /etc/systemd/system/host_command.service.
+ Host commands set up finished
+ Tue 18 Jul 2023 10:09:48 AM UTC installing ansible
+Hit:1 http://httpredir.debian.org/debian bullseye InRelease
+Hit:2 http://httpredir.debian.org/debian bullseye-updates InRelease
+Hit:3 https://download.docker.com/linux/debian bullseye InRelease
+Get:4 http://security.debian.org/debian-security bullseye-security InRelease [48.4 kB]
+Fetched 48.4 kB in 25s (1,973 B/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+curl is already the newest version (7.74.0-1.3+deb11u7).
+wget is already the newest version (1.21-1+deb11u1).
+The following NEW packages will be installed:
+  gnupg2
+0 upgraded, 1 newly installed, 0 to remove and 3 not upgraded.
+Need to get 434 kB of archives.
+After this operation, 453 kB of additional disk space will be used.
+Get:1 http://httpredir.debian.org/debian bullseye/main amd64 gnupg2 all 2.2.27-2+deb11u2 [434 kB]
+Fetched 434 kB in 0s (5,975 kB/s)
+Selecting previously unselected package gnupg2.
+(Reading database ... 43141 files and directories currently installed.)
+Preparing to unpack .../gnupg2_2.2.27-2+deb11u2_all.deb ...
+Unpacking gnupg2 (2.2.27-2+deb11u2) ...
+Setting up gnupg2 (2.2.27-2+deb11u2) ...
+Processing triggers for man-db (2.9.4-2) ...
+deb http://ppa.launchpad.net/ansible/ansible/ubuntu focal main
+Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+Executing: /tmp/apt-key-gpghome.tZj5tLhhpf/gpg.1.sh --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367
+gpg: key 93C4A3FD7BB9C367: public key "Launchpad PPA for Ansible, Inc." imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+Hit:1 http://httpredir.debian.org/debian bullseye InRelease
+Hit:2 http://security.debian.org/debian-security bullseye-security InRelease
+Hit:3 https://download.docker.com/linux/debian bullseye InRelease
+Get:4 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease [18.0 kB]
+Hit:5 http://httpredir.debian.org/debian bullseye-updates InRelease
+Get:6 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 Packages [1,132 B]
+Get:7 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main Translation-en [756 B]
+Fetched 19.9 kB in 1s (28.6 kB/s)
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+3 packages can be upgraded. Run 'apt list --upgradable' to see them.
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following additional packages will be installed:
+  ansible-core libsodium23 libyaml-0-2 python3-bcrypt python3-cffi-backend
+  python3-cryptography python3-invoke python3-jinja2 python3-jmespath
+  python3-kerberos python3-markupsafe python3-nacl python3-ntlm-auth
+  python3-packaging python3-paramiko python3-pyparsing
+  python3-requests-kerberos python3-requests-ntlm python3-resolvelib
+  python3-winrm python3-xmltodict python3-yaml sshpass
+Suggested packages:
+  python-cryptography-doc python3-cryptography-vectors python-invoke-doc
+  python-jinja2-doc python-nacl-doc python3-gssapi python-pyparsing-doc
+The following NEW packages will be installed:
+  ansible ansible-core libsodium23 libyaml-0-2 python3-bcrypt
+  python3-cffi-backend python3-cryptography python3-invoke python3-jinja2
+  python3-jmespath python3-kerberos python3-markupsafe python3-nacl
+  python3-ntlm-auth python3-packaging python3-paramiko python3-pyparsing
+  python3-requests-kerberos python3-requests-ntlm python3-resolvelib
+  python3-winrm python3-xmltodict python3-yaml sshpass
+0 upgraded, 24 newly installed, 0 to remove and 3 not upgraded.
+Need to get 23.3 MB of archives.
+After this operation, 328 MB of additional disk space will be used.
+Get:1 http://httpredir.debian.org/debian bullseye/main amd64 python3-cffi-backend amd64 1.14.5-1 [85.8 kB]
+Get:2 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 python3-resolvelib all 0.5.4-2ppa~focal [12.6 kB]
+Get:3 http://httpredir.debian.org/debian bullseye/main amd64 python3-cryptography amd64 3.3.2-1 [223 kB]
+Get:4 http://httpredir.debian.org/debian bullseye/main amd64 python3-markupsafe amd64 1.1.1-1+b3 [15.2 kB]
+Get:5 http://httpredir.debian.org/debian bullseye/main amd64 python3-jinja2 all 2.11.3-1 [114 kB]
+Get:6 http://httpredir.debian.org/debian bullseye/main amd64 python3-pyparsing all 2.4.7-1 [109 kB]
+Get:7 http://httpredir.debian.org/debian bullseye/main amd64 python3-packaging all 20.9-2 [33.5 kB]
+Get:8 http://httpredir.debian.org/debian bullseye/main amd64 libyaml-0-2 amd64 0.2.2-1 [49.6 kB]
+Get:9 http://httpredir.debian.org/debian bullseye/main amd64 python3-yaml amd64 5.3.1-5 [138 kB]
+Get:10 http://httpredir.debian.org/debian bullseye/main amd64 libsodium23 amd64 1.0.18-1 [161 kB]
+Get:11 http://httpredir.debian.org/debian bullseye/main amd64 python3-bcrypt amd64 3.1.7-4 [33.7 kB]
+Get:12 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible-core all 2.12.10-1ppa~focal [943 kB]
+Get:13 http://httpredir.debian.org/debian bullseye/main amd64 python3-invoke all 1.4.1+ds-0.1 [91.4 kB]
+Get:14 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible all 5.10.0-1ppa~focal [21.0 MB]
+Get:15 http://httpredir.debian.org/debian bullseye/main amd64 python3-jmespath all 0.10.0-1 [21.7 kB]
+Get:16 http://httpredir.debian.org/debian bullseye/main amd64 python3-kerberos amd64 1.1.14-3.1+b3 [24.1 kB]
+Get:17 http://httpredir.debian.org/debian bullseye/main amd64 python3-nacl amd64 1.4.0-1+b1 [55.3 kB]
+Get:18 http://httpredir.debian.org/debian bullseye/main amd64 python3-ntlm-auth all 1.4.0-1 [21.6 kB]
+Get:19 http://httpredir.debian.org/debian bullseye/main amd64 python3-paramiko all 2.7.2-1 [130 kB]
+Get:20 http://httpredir.debian.org/debian bullseye/main amd64 python3-requests-kerberos all 0.12.0-2 [13.0 kB]
+Get:21 http://httpredir.debian.org/debian bullseye/main amd64 python3-requests-ntlm all 1.1.0-1.1 [6,120 B]
+Get:22 http://httpredir.debian.org/debian bullseye/main amd64 python3-xmltodict all 0.12.0-2 [15.2 kB]
+Get:23 http://httpredir.debian.org/debian bullseye/main amd64 python3-winrm all 0.3.0-2 [21.6 kB]
+Get:24 http://httpredir.debian.org/debian bullseye/main amd64 sshpass amd64 1.09-1+b1 [13.0 kB]
+Fetched 23.3 MB in 0s (52.3 MB/s)
+Selecting previously unselected package python3-cffi-backend:amd64.
+(Reading database ... 43148 files and directories currently installed.)
+Preparing to unpack .../00-python3-cffi-backend_1.14.5-1_amd64.deb ...
+Unpacking python3-cffi-backend:amd64 (1.14.5-1) ...
+Selecting previously unselected package python3-cryptography.
+Preparing to unpack .../01-python3-cryptography_3.3.2-1_amd64.deb ...
+Unpacking python3-cryptography (3.3.2-1) ...
+Selecting previously unselected package python3-markupsafe.
+Preparing to unpack .../02-python3-markupsafe_1.1.1-1+b3_amd64.deb ...
+Unpacking python3-markupsafe (1.1.1-1+b3) ...
+Selecting previously unselected package python3-jinja2.
+Preparing to unpack .../03-python3-jinja2_2.11.3-1_all.deb ...
+Unpacking python3-jinja2 (2.11.3-1) ...
+Selecting previously unselected package python3-pyparsing.
+Preparing to unpack .../04-python3-pyparsing_2.4.7-1_all.deb ...
+Unpacking python3-pyparsing (2.4.7-1) ...
+Selecting previously unselected package python3-packaging.
+Preparing to unpack .../05-python3-packaging_20.9-2_all.deb ...
+Unpacking python3-packaging (20.9-2) ...
+Selecting previously unselected package python3-resolvelib.
+Preparing to unpack .../06-python3-resolvelib_0.5.4-2ppa~focal_all.deb ...
+Unpacking python3-resolvelib (0.5.4-2ppa~focal) ...
+Selecting previously unselected package libyaml-0-2:amd64.
+Preparing to unpack .../07-libyaml-0-2_0.2.2-1_amd64.deb ...
+Unpacking libyaml-0-2:amd64 (0.2.2-1) ...
+Selecting previously unselected package python3-yaml.
+Preparing to unpack .../08-python3-yaml_5.3.1-5_amd64.deb ...
+Unpacking python3-yaml (5.3.1-5) ...
+Selecting previously unselected package ansible-core.
+Preparing to unpack .../09-ansible-core_2.12.10-1ppa~focal_all.deb ...
+Unpacking ansible-core (2.12.10-1ppa~focal) ...
+Selecting previously unselected package ansible.
+Preparing to unpack .../10-ansible_5.10.0-1ppa~focal_all.deb ...
+Unpacking ansible (5.10.0-1ppa~focal) ...
+Selecting previously unselected package libsodium23:amd64.
+Preparing to unpack .../11-libsodium23_1.0.18-1_amd64.deb ...
+Unpacking libsodium23:amd64 (1.0.18-1) ...
+Selecting previously unselected package python3-bcrypt.
+Preparing to unpack .../12-python3-bcrypt_3.1.7-4_amd64.deb ...
+Unpacking python3-bcrypt (3.1.7-4) ...
+Selecting previously unselected package python3-invoke.
+Preparing to unpack .../13-python3-invoke_1.4.1+ds-0.1_all.deb ...
+Unpacking python3-invoke (1.4.1+ds-0.1) ...
+Selecting previously unselected package python3-jmespath.
+Preparing to unpack .../14-python3-jmespath_0.10.0-1_all.deb ...
+Unpacking python3-jmespath (0.10.0-1) ...
+Selecting previously unselected package python3-kerberos.
+Preparing to unpack .../15-python3-kerberos_1.1.14-3.1+b3_amd64.deb ...
+Unpacking python3-kerberos (1.1.14-3.1+b3) ...
+Selecting previously unselected package python3-nacl.
+Preparing to unpack .../16-python3-nacl_1.4.0-1+b1_amd64.deb ...
+Unpacking python3-nacl (1.4.0-1+b1) ...
+Selecting previously unselected package python3-ntlm-auth.
+Preparing to unpack .../17-python3-ntlm-auth_1.4.0-1_all.deb ...
+Unpacking python3-ntlm-auth (1.4.0-1) ...
+Selecting previously unselected package python3-paramiko.
+Preparing to unpack .../18-python3-paramiko_2.7.2-1_all.deb ...
+Unpacking python3-paramiko (2.7.2-1) ...
+Selecting previously unselected package python3-requests-kerberos.
+Preparing to unpack .../19-python3-requests-kerberos_0.12.0-2_all.deb ...
+Unpacking python3-requests-kerberos (0.12.0-2) ...
+Selecting previously unselected package python3-requests-ntlm.
+Preparing to unpack .../20-python3-requests-ntlm_1.1.0-1.1_all.deb ...
+Unpacking python3-requests-ntlm (1.1.0-1.1) ...
+Selecting previously unselected package python3-xmltodict.
+Preparing to unpack .../21-python3-xmltodict_0.12.0-2_all.deb ...
+Unpacking python3-xmltodict (0.12.0-2) ...
+Selecting previously unselected package python3-winrm.
+Preparing to unpack .../22-python3-winrm_0.3.0-2_all.deb ...
+Unpacking python3-winrm (0.3.0-2) ...
+Selecting previously unselected package sshpass.
+Preparing to unpack .../23-sshpass_1.09-1+b1_amd64.deb ...
+Unpacking sshpass (1.09-1+b1) ...
+Setting up libsodium23:amd64 (1.0.18-1) ...
+Setting up libyaml-0-2:amd64 (0.2.2-1) ...
+Setting up python3-ntlm-auth (1.4.0-1) ...
+Setting up python3-resolvelib (0.5.4-2ppa~focal) ...
+Setting up python3-kerberos (1.1.14-3.1+b3) ...
+Setting up python3-yaml (5.3.1-5) ...
+Setting up python3-markupsafe (1.1.1-1+b3) ...
+Setting up sshpass (1.09-1+b1) ...
+Setting up python3-xmltodict (0.12.0-2) ...
+Setting up python3-jinja2 (2.11.3-1) ...
+Setting up python3-pyparsing (2.4.7-1) ...
+Setting up python3-jmespath (0.10.0-1) ...
+Setting up python3-invoke (1.4.1+ds-0.1) ...
+Setting up python3-cffi-backend:amd64 (1.14.5-1) ...
+Setting up python3-bcrypt (3.1.7-4) ...
+Setting up python3-packaging (20.9-2) ...
+Setting up python3-cryptography (3.3.2-1) ...
+Setting up python3-requests-kerberos (0.12.0-2) ...
+Setting up python3-nacl (1.4.0-1+b1) ...
+Setting up python3-requests-ntlm (1.1.0-1.1) ...
+Setting up ansible-core (2.12.10-1ppa~focal) ...
+Setting up python3-winrm (0.3.0-2) ...
+Setting up ansible (5.10.0-1ppa~focal) ...
+Setting up python3-paramiko (2.7.2-1) ...
+Processing triggers for man-db (2.9.4-2) ...
+Processing triggers for libc-bin (2.31-13+deb11u6) ...
+[defaults]
+log_path = /var/log/zerto/container/ansible/ansible.log
+ ansible installed
+ Tue 18 Jul 2023 10:11:07 AM UTC Loading images. This operation may take a few minutes
+unpacking zapps-registry.zerto.com/zvml/official/upgrade-service:10.0.0.1637 (sha256:3b65134090c54d0851012c01f80957441cb0e49f9ff91d0705bbbd29d1770fa2)...done
+unpacking zapps-registry.zerto.com/zvml/official/zkeycloak:2.2.3 (sha256:62875e33262f412936ca98af950afeb1c7b7cd90dc25e4874473a012c895e82e)...done
+unpacking zapps-registry.zerto.com/zvml/official/zkeycloak_zkeycloak-db:2.2.3 (sha256:f9da15c1af80eed3248d43f20225ab8fa87753c87d0b0e4262e937b233bea5bc)...done
+unpacking zapps-registry.zerto.com/zvml/official/busybox:latest (sha256:2d86744fc4e303fbf4e71c67b89ee77cc6c60e9315cbd2c27f50e85b2d866450)...done
+unpacking zapps-registry.zerto.com/zvml/official/zfluentd_k8s:2.2.702 (sha256:6cb3c12c3b53c1065dedb21fdbc8373eafc8b3f9d64b13c68ffeff03d87ac1df)...done
+ Tue 18 Jul 2023 10:12:15 AM UTC About to run Upgrade Validations
+2023-07-18T10:12:16.374Z | INFO | PreUpgradeValidations.DbAccessor | Clear open database connections started |
+2023-07-18T10:12:16.389Z | INFO | PreUpgradeValidations.DbAccessor | Clear open database connections completed |
+2023-07-18T10:12:16.389Z | INFO | PreUpgradeValidations.DbAccessor | Read storage properties started |
+2023-07-18T10:12:16.394Z | INFO | Zerto.Infra.Storage.Configuration.PersistentStorageProperties | called, file path = /app/storage/storage_properties.xml |
+2023-07-18T10:12:16.552Z | INFO | Zerto.Infra.Communication.Factories.InfraOSUtilsServiceLocator | Data protection source = FileSystem |
+2023-07-18T10:12:16.552Z | INFO | Zerto.Infra.Communication.Factories.InfraOSUtilsServiceLocator | Certificate Provider of type = Zerto.Infra.Communication.Security.SensitiveData.DataProtectionFileSystemCertificateProvider |
+2023-07-18T10:12:16.552Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:16.558Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:16.602Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.DataProtectionFileSystemCertificateProvider | Read data protection certificate file and caching it |
+2023-07-18T10:12:16.602Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.DataProtectionFileSystemCertificateProvider | Successfully read certificate 3983 bytes from /run/secrets/data_protector_certificate.pfx |
+2023-07-18T10:12:16.852Z | INFO | PreUpgradeValidations.DbAccessor | Read storage properties completed |
+2023-07-18T10:12:16.852Z | INFO | PreUpgradeValidations.Program | About to run Upgrade Validations |
+2023-07-18T10:12:16.912Z | INFO | Zerto.Storage.Factory.RepositoryFactory | create nHibernate repository with provider = SqlServer, connection string = data source=zvm-db;initial catalog=zvm_db;user id=sa;password=*****;connect timeout=60 |
+2023-07-18T10:12:17.108Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:17.108Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:17.108Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.SensitiveDataEncryptorLocator | encryptor is null |
+2023-07-18T10:12:17.108Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:17.108Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:17.108Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:17.108Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:17.115Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.SensitiveDataEncryptorLocator | Instance set |
+2023-07-18T10:12:17.194Z | INFO | Zerto.Storage.Checkpoints.Repositories.Partitioned.Maintenance.CheckpointsTablesMaintainerJob | Initialize CheckpointsTablesMaintainerJob with intervals: truncateSecondsInterval: 3600, storeNonActiveSecondsInterval: 900, diluteSecondsInterval: 120, deleteVpgsSecondsInterval: 60. loopSleepSecondsInterval: 10 |
+2023-07-18T10:12:19.287Z | INFO | Zerto.Storage.NHibernate.NhSessionManager | create session factory successfully |
+2023-07-18T10:12:19.489Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:19.489Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.ExecutionContext.ExecutionContextDetector | friendlyName:PreUpgradeValidations |
+2023-07-18T10:12:19.489Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.DbKeyPathProvider | Db Key Path: /app/Secrets/db.dat |
+2023-07-18T10:12:19.489Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.FileSystemKeyRepository | dbKeyPath:/app/Secrets/db.dat |
+2023-07-18T10:12:19.489Z | INFO | Zerto.Infra.Communication.Security.SensitiveData.FileSystemKeyRepository | TraceDbKeyStats: dbKeyPath: /app/Secrets/db.dat, creationTimeUtc: 10/11/2022 13:44:54, lastAccessTimeUtc: 07/18/2023 09:53:34, lastWriteTimeUtc: 10/11/2022 13:44:54, dbKeyBytesLength: 164,  |
+2023-07-18T10:12:19.614Z | INFO | Zerto.Storage.NHibernate.Repositories.NhHashMapperRepository |  elapsed 115.9039 MS |
+2023-07-18T10:12:19.614Z | INFO | Zerto.Storage.NHibernate.Repositories.NhHashMapperRepository | got 80 bytes |
+2023-07-18T10:12:19.620Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Connecting: Zerto.Zvm.Common.VirtualizationSettings.VCenterCredentials |
+2023-07-18T10:12:19.624Z | INFO | assertLogger | AssertServices panic on assert: True |
+2023-07-18T10:12:19.626Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | Creating VCenterProxy |
+2023-07-18T10:12:19.649Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | VCenterProxy created |
+2023-07-18T10:12:19.649Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | host=10.13.1.140 |
+2023-07-18T10:12:19.649Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | setting up certificate policy callback |
+2023-07-18T10:12:19.653Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | done setting up |
+2023-07-18T10:12:19.657Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:12:19.657Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:12:19.665Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotAuthenticated to NotConnected |
+2023-07-18T10:12:19.665Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | Creating VCenterProxy |
+2023-07-18T10:12:19.665Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | VCenterProxy created |
+2023-07-18T10:12:19.665Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector started |
+2023-07-18T10:12:19.694Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:12:19.694Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:12:19.694Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connecting |
+2023-07-18T10:12:19.694Z | INFO | VCenterConnectionLayer.Basics | Connecting to vCenter... |
+2023-07-18T10:12:19.696Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Started  |
+2023-07-18T10:12:20.756Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | pbm exist: True |
+2023-07-18T10:12:20.757Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Connect to pbm:False Cookie:  PbmCookie: null |
+2023-07-18T10:12:20.807Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm Connected:True |
+2023-07-18T10:12:20.807Z | INFO | VCenterConnectionLayer.Basics | Connected |
+2023-07-18T10:12:20.807Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connected |
+2023-07-18T10:12:20.818Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotConnected to Connected |
+2023-07-18T10:12:20.818Z | INFO | Zerto.Zvm.HypervisorServices.Connector.HypervisorIdentifierProvider | initialize server identifier from connection. (e2a28ca2-8237-4cbe-ad06-b5bc99e78c15) |
+2023-07-18T10:12:20.818Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Stored server identifier e2a28ca2-8237-4cbe-ad06-b5bc99e78c15 |
+2023-07-18T10:12:20.822Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Was disconnected.  Reconnection succeeded |
+2023-07-18T10:12:20.824Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:12:20.824Z | INFO | ZTimerLogger | ZTimer started Timer Id :1, Timer name : vCenter Connector  thread Timer GUID: c34d4842-c841-451d-af9e-5c8017bf81e1 |
+2023-07-18T10:12:20.824Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Reconnection thread started |
+2023-07-18T10:12:20.824Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:12:20.824Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:12:20.914Z | INFO | Zerto.Storage.NHibernate.Repositories.Caches.IdentifierMapperRepositoryCache | Loading 206 rows from repository to cache |
+2023-07-18T10:12:20.917Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Checking for Identifier Mappper corrupted entites |
+info: UpgradeService.Accessors.ZvmService.ZvmServiceApiClient[0]
+      GET operation v1/transmitter/configuration/isEnabled
+info: UpgradeService.Accessors.ZvmService.ZvmServiceApiClient[0]
+      GET operation v1/transmitter/configuration/isEnabled complete.
+2023-07-18T10:12:21.367Z | INFO | Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient | Query URL = https://zvm-control.api.zerto.com/v1/features/identifierMapperUpgradeValidation?siteIdentifier=a2e818cc-8aaa-4c4b-8c45-0ea108ba3dd0 |
+2023-07-18T10:12:21.800Z | INFO | Zerto.Framework.SaasClient.EnabledFeatures.EnabledFeaturesApiClient | Result for 'identifierMapperUpgradeValidation' and siteIdentifier 'a2e818cc-8aaa-4c4b-8c45-0ea108ba3dd0': False |
+2023-07-18T10:12:21.800Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Is Saas aprroved: False |
+2023-07-18T10:12:21.800Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | This site is not part of identifier mapper corrupted entities validation |
+2023-07-18T10:12:21.800Z | INFO | PreUpgradeValidations.VcUpgradeIdentifierMapperCorruptedEntitiesValidator | Setting result 'False' of IsFixerEnabled to DB |
+2023-07-18T10:12:21.826Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | Connecting: Zerto.Zvm.Common.VirtualizationSettings.VCenterCredentials |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Infra.Communication.ServicePoint.CertificatesTrustManager | host=10.13.1.140 |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:12:21.826Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotAuthenticated to NotConnected |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | Creating VCenterProxy |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | VCenterProxy created |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector started |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Initializing. vc = 10.13.1.140 |
+2023-07-18T10:12:21.826Z | INFO | VCenterConnectionLayer.BasicsConnector | Initializing AppUtil with url 'https://10.13.1.140/sdk' |
+2023-07-18T10:12:21.826Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connecting |
+2023-07-18T10:12:21.826Z | INFO | VCenterConnectionLayer.Basics | Connecting to vCenter... |
+2023-07-18T10:12:21.826Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Started  |
+2023-07-18T10:12:21.932Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | pbm exist: True |
+2023-07-18T10:12:21.932Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Connect to pbm:False Cookie:  PbmCookie: null |
+2023-07-18T10:12:21.941Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm Connected:True |
+2023-07-18T10:12:21.941Z | INFO | VCenterConnectionLayer.Basics | Connected |
+2023-07-18T10:12:21.941Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Connected |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Changing connection level from NotConnected to Connected |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.HypervisorServices.Connector.HypervisorIdentifierProvider | initialize server identifier from connection. (e2a28ca2-8237-4cbe-ad06-b5bc99e78c15) |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Stored server identifier e2a28ca2-8237-4cbe-ad06-b5bc99e78c15 |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Was disconnected.  Reconnection succeeded |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:12:21.946Z | INFO | ZTimerLogger | ZTimer started Timer Id :2, Timer name : vCenter Connector  thread Timer GUID: af341311-d4e8-4fac-9ba6-1ebb54f21925 |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | Reconnection thread started |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:12:21.946Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | connected=True vCenterIdentifierMapperWasInitialize=True |
+2023-07-18T10:12:21.977Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | Unregistering Plugin |
+2023-07-18T10:12:28.778Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | Unregistered Plugin |
+2023-07-18T10:12:28.778Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | registering Plugin |
+2023-07-18T10:12:28.802Z | INFO | Zerto.Zvm.Platform.VCenter.Proxy.VCenterProxy | About to register plugin with privileges: zerto.com.zerto.plugin.ManageVRA, zerto.com.zerto.plugin.ManageCloudConnector, zerto.com.zerto.plugin.ManageSite, zerto.com.zerto.plugin.TestFailover, zerto.com.zerto.plugin.LiveFailoverMove, zerto.com.zerto.plugin.Viewer, zerto.com.zerto.plugin.ManageVPG |
+2023-07-18T10:12:30.621Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryBeforeCommit description=The VPG is waiting to be committed or rolled back  |
+2023-07-18T10:12:30.862Z | INFO | VCenterConnectionLayer.Basics | SessionIsActive == True |
+2023-07-18T10:12:30.862Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm is Connected . Session Cookie: e2ab4816-002c-4b4e-8059-b6ce4bef5905 PbmCookie: e2ab4816-002c-4b4e-8059-b6ce4bef5905 |
+2023-07-18T10:12:30.862Z | INFO | VCenterConnectionLayer.Basics | Pbm is connected = True |
+2023-07-18T10:12:30.862Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenter remains connected |
+2023-07-18T10:12:30.862Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:12:31.052Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToZvmConnection description=The Zerto Virtual Manager is not connected to a remote site Zerto Virtual Manager  |
+2023-07-18T10:12:31.082Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToZvmSync description=The Zerto Virtual Managers are syncing with each other  |
+2023-07-18T10:12:31.117Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToZvmVpgsSync description=The Zerto Virtual Manager has VPGs which are unsynchronized with a remote Zerto Virtual Manager  |
+2023-07-18T10:12:31.145Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToVraConnection description=The Zerto Virtual Manager is not connected to a VRA  |
+2023-07-18T10:12:31.176Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmToVraUnsyncedVpgs description=The Zerto Virtual Manager has VPGs which are unsynchronized with a VRA  |
+2023-07-18T10:12:31.205Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraDidntReceiveIp description=The VRA didn't receive an IP  |
+2023-07-18T10:12:31.242Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraIpChanged description=The VRA IP changed  |
+2023-07-18T10:12:31.272Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraToVraConnection description=A VRA is not connected to a remote site VRA  |
+2023-07-18T10:12:31.304Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Datastore description=The datastore is not accessible  |
+2023-07-18T10:12:31.337Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.License description=There is a problem with the license  |
+2023-07-18T10:12:31.411Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BillingAlertName1 description=The ZVM is expected to send  usage information for billing purposes but failed to do so  |
+2023-07-18T10:12:31.432Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LastTest description=The VPG has not been tested or was tested a long time ago  |
+2023-07-18T10:12:31.466Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupMissingConfiguration description=The VPG has a missing configuration  |
+2023-07-18T10:12:31.490Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupStoppingFailoverTest description=The System is trying to stop the Failover Test of the VPG, but cannot complete this task.  |
+2023-07-18T10:12:31.516Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupRollingBackFailoverLive description=The System is trying to stop the Failover operation, but cannot complete this task.  |
+2023-07-18T10:12:31.544Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupRollingBackMove description=The System is trying to stop the Move operation, but cannot complete this task.  |
+2023-07-18T10:12:31.571Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupError description=The VPG has an error, for example, if a storage error occurs while recovering from a VRA crash  |
+2023-07-18T10:12:31.592Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Elastic VDC - invalid PVDC configuration description=Provider VDC was changed and now contain an invalid PVDC configuration issue might be related to a resource pool recently added  |
+2023-07-18T10:12:31.614Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.UndoRollbackFailed description=A rollback failed  |
+2023-07-18T10:12:31.645Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RpoWarning description=The recovery RPO is not being met. The current RPO is more than the target RPO  |
+2023-07-18T10:12:31.670Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RpoError description=The recovery RPO is not being met. The current RPO is more than the target RPO  |
+2023-07-18T10:12:31.691Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BacklogWarning description=Journal history problem. The amount of history is less than it should be  |
+2023-07-18T10:12:31.733Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BacklogError description=Journal history problem. The amount of history is less than it should be  |
+2023-07-18T10:12:31.760Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VirtualMachine description=For internal use only  |
+2023-07-18T10:12:31.795Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.UninstalledHost description=The host has no VRA installed  |
+2023-07-18T10:12:31.828Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.HostDisconnected description=The host is disconnected  |
+2023-07-18T10:12:31.882Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.FailureDuringReflectionCollection description=Failure during reflection collection  |
+2023-07-18T10:12:31.937Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryDataStoreFull description=The recovery datastore or journal is full  |
+2023-07-18T10:12:31.974Z | INFO | VCenterConnectionLayer.Basics | SessionIsActive == True |
+2023-07-18T10:12:31.974Z | INFO | VCenterConnectionLayer.ExtendedAppUtil | Pbm is Connected . Session Cookie: b6440617-68a6-44a3-ab55-efc3ff797499 PbmCookie: b6440617-68a6-44a3-ab55-efc3ff797499 |
+2023-07-18T10:12:31.974Z | INFO | VCenterConnectionLayer.Basics | Pbm is connected = True |
+2023-07-18T10:12:31.974Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenter remains connected |
+2023-07-18T10:12:31.974Z | INFO | Zerto.Zvm.Platform.VCenter.Connector.VCenterConnector | VCenterConnector InvalidCredentialsCounter |
+2023-07-18T10:12:31.976Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraProtectedVolume description=VRA protected volume error  |
+2023-07-18T10:12:32.013Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraLogVolume description=VRA journal volume error  |
+2023-07-18T10:12:32.053Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraTargetVolume description=Recovery volume error for a VRA  |
+2023-07-18T10:12:32.087Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraCloneVolume description=A VRA clone volume error  |
+2023-07-18T10:12:32.111Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DisconnectedVCenter description=vCenter Server disconnection  |
+2023-07-18T10:12:32.142Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VmIdentifierMapperInvalidMapping description=Invalid vm/s identifier mapping exists. Contact Zerto Support  |
+2023-07-18T10:12:32.172Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedAppAwareVmAliasIdIsMissing description=Protected App aware VM AliasId is missing  |
+2023-07-18T10:12:32.198Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DuplicateMacAddress description=MAC Address conflict  |
+2023-07-18T10:12:32.220Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CriticalCheckpoint description=Critical checkpoint: Only a few minutes of checkpoints are left in the journal for the VPG  |
+2023-07-18T10:12:32.247Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VCDReflection description=A vCloud Director problem with collecting the reflection  |
+2023-07-18T10:12:32.275Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VCDConnector description=vCloud Director connection problem  |
+2023-07-18T10:12:32.314Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CloudConnector description=A problem with the Zerto Cloud Connector, for example, it is powered off  |
+2023-07-18T10:12:32.346Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVolumeSizeChanged description=For internal use only  |
+2023-07-18T10:12:32.422Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryDataStoreLowFreeSpace description=The recovery datastore has less than 1GB of free space  |
+2023-07-18T10:12:32.473Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VRARegistrationFailed description=Problem with an ESX/i upgrade  |
+2023-07-18T10:12:32.515Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostVm description=A VRA or shadow VRA was deleted, leaving a ghost VRA  |
+2023-07-18T10:12:32.546Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostVolume description=A journal or recovery volume was deleted, leaving a ghost volume  |
+2023-07-18T10:12:32.576Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostUnknownVolume description=A journal or recovery volume was added, but the volume manager is not aware of it  |
+2023-07-18T10:12:32.610Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.GhostSystemDisk description=A system disk was deleted, leaving a ghost volume  |
+2023-07-18T10:12:32.636Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Ghost CloudConnector description=A Zerto Cloud Connector was deleted, leaving a ghost cloud connector  |
+2023-07-18T10:12:32.665Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.PeerZvmCompatibility description=The paired remote Zerto Virtual Manager is a different version that cannot work with the local Zerto Virtual Manager  |
+2023-07-18T10:12:32.696Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.HostPasswordChanged description=The password used by the VRA to access the host ESX/ESXi is no longer valid  |
+2023-07-18T10:12:32.722Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ResourcePoolMissingError description=Target resource pool cannot be found for VPG  |
+2023-07-18T10:12:32.751Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ResourcePoolInsufficientError description=Resource Pool does not have enough resource to support VPG  |
+2023-07-18T10:12:32.788Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DiskboxPoweredOff description=Diskbox is powered off  |
+2023-07-18T10:12:32.809Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVolumeAndMirrorSizeMismatch description=Protected volume and recovery volume size mismatch  |
+2023-07-18T10:12:32.832Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraPoweredOff description=VRA is powered off  |
+2023-07-18T10:12:32.859Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraBallooning description=On 4.x host: VRA on host does not have enough resources. On 5.x host: VRA on host does not have enough reserved memory  |
+2023-07-18T10:12:32.897Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZertoGenericAlert description=Zerto generic alert - check Zerto UI for details  |
+2023-07-18T10:12:32.936Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AssertAlert description=Zerto assert alert - internal problem in Zerto Virtual Manager  |
+2023-07-18T10:12:32.966Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LowDiskFreeSpace description=The disk on which the Zerto Virtual Manager is installed is low on space  |
+2023-07-18T10:12:32.993Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VPG Mirror table inconsistency description=Found VPG that is dependent on missing mirror id  |
+2023-07-18T10:12:33.022Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectionGroupPaused description=The VPG protection has been paused  |
+2023-07-18T10:12:33.048Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryStorageProfileDisabled description=Recovery storage profile is disabled  |
+2023-07-18T10:12:33.100Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryStorageProfileNotFound description=Recovery storage profile is not found  |
+2023-07-18T10:12:33.126Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryProviderVDCStorageProfileDisabled description=Recovery provider vDC storage profile is disabled  |
+2023-07-18T10:12:33.151Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryProviderVDCStorageProfileNotFound description=Recovery provider vDC storage profile is not found  |
+2023-07-18T10:12:33.175Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.NoMatchingStorageProfile description=Could not find matching recovery storage profile  |
+2023-07-18T10:12:33.210Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryVcenterStorageProfileMissing description=Storage profile not found in underlying vCenter Server  |
+2023-07-18T10:12:33.233Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryDatastoreNotInStorageProfile description=Missing recovery datastores in recovery storage profile  |
+2023-07-18T10:12:33.260Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MissingOrgVdcNetworkMapping description=A network mapping for Org vDC for the VPG is missing  |
+2023-07-18T10:12:33.282Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VpgVappBrokenReflection description=Protected vApp is corrupted on VCD. Make sure all vApp VMs are powered on and running.  |
+2023-07-18T10:12:33.307Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MissingRecoveryOrgVdcNetworkMapping description=A network mapping for the recovery site provider Org vDC is missing  |
+2023-07-18T10:12:33.330Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.BrokenOrgVdcNetwork description=A network for Org vDC for the VPG is broken  |
+2023-07-18T10:12:33.351Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.UnprotectedVMsError description=One or more of the virtual machines in the VPG are not protected, for example a VM was vMotioned to a host without a VRA  |
+2023-07-18T10:12:33.374Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ServiceProfileMissing description=The service profile for the VPG cannot be found  |
+2023-07-18T10:12:33.453Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VPGOutOfZorgOnProtected description=The VPG belongs to a ZORG but contains resources outside of the ZORG  |
+2023-07-18T10:12:33.473Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VPGOutOfZorgOnRecovery description=The VPG belongs to a ZORG but requires resources outside of the ZORG  |
+2023-07-18T10:12:33.492Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.JournalLimitReached description=The journal or scratch volumes used in testing and before committing have reached the hard limit set for the journal  |
+2023-07-18T10:12:33.515Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionFailsConstantlyWarning description=Scheduled retention process failed for the last 3 days  |
+2023-07-18T10:12:33.538Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionFailsConstantlyError description=Scheduled retention process failed for the last 7 days  |
+2023-07-18T10:12:33.559Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LtrVpgStatusAlertError description=Scheduled retention process failed  |
+2023-07-18T10:12:33.581Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LtrMirrorStatusAlertError description=Protection group not ready for LTR  |
+2023-07-18T10:12:33.602Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetDisconnected description=The repository is not accessible by the DSS  |
+2023-07-18T10:12:33.627Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetIsFull description=The repository is full  |
+2023-07-18T10:12:33.656Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetIsGettingFull description=The repository is getting full  |
+2023-07-18T10:12:33.685Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VbaDisconnected description=The VBA service is not connected to the Zerto Virtual Manager  |
+2023-07-18T10:12:33.716Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RetentionTargetIsNone description=The repository cannot be found  |
+2023-07-18T10:12:33.751Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RdmWithOddNumberOfBlocks description=The RDM has an odd number of blocks  |
+2023-07-18T10:12:33.770Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VirtualMachineHardwareVersionMismatch description=The hardware version of one or more of the protected VMs is not supported by the recovery host  |
+2023-07-18T10:12:33.792Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.NewVersionAvailable description=A new ZVM version is available for upgrade.  |
+2023-07-18T10:12:33.817Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Win2003VmDuringReplicationToVCD description=Windows 2003 VM found during relicating to VCD => Windows 2003 VM in VPG that is recovering to vCD  |
+2023-07-18T10:12:33.860Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RecoveryOrgVdcStoragePolicyPerVolumeNotSupported description=Storage Policy per volume is not supported in OrgVDCs with FAST Provisioning enabled.  |
+2023-07-18T10:12:33.880Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AutoProtectFailure description=failed to be automatically protect. Make sure to remove tagged VMs and protect manually.  |
+2023-07-18T10:12:33.899Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AutoProtectTagMismatch description=Tag mismatch. Either remove the tag or unprotect the VM  |
+2023-07-18T10:12:33.922Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScratchDatastoreUnreachable description=Datastore is not reachable. Possible reasons: datastore doesn't exist or datastore is not in the cluster.  |
+2023-07-18T10:12:33.945Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.LicenseServerDisconnected description=Site is disconnected from license server  |
+2023-07-18T10:12:33.964Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.DisconnectedAWSName description=A disconnection to AWS  |
+2023-07-18T10:12:33.983Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CloudStorageRemoved description=Trying to replicate into a cloud storage that was removed  |
+2023-07-18T10:12:34.003Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureVraVmCloudStorageRemovedName description=Azure VRA VM cloud storage removed  |
+2023-07-18T10:12:34.028Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AwsInstancesQuotaExceeded description=Trying to create Aws instance above quota  |
+2023-07-18T10:12:34.048Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.PublicCloudHealthcheckError description=Zerto AWS Snapshot Adapter is not reachable. Please contact Zerto support.  |
+2023-07-18T10:12:34.074Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.OrchestratorReset description=Zerto Orchestrator is in Reset state  |
+2023-07-18T10:12:34.110Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScaleSetCreation description=Failure to create Scaleset  |
+2023-07-18T10:12:34.140Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScaleSetQueuesCreation description=Failure to create Scaleset Queues  |
+2023-07-18T10:12:34.163Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.OrchestratorWorkersCreation description=Failure to create Scaleset workers  |
+2023-07-18T10:12:34.188Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.OrchestratorWorkersPlacement description=Failure to place Scaleset workers on a specific subnet  |
+2023-07-18T10:12:34.212Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MissingNetworksForVMmsInVPG description=Non Existed Network found between VMs Failover Networks => The recovery network does not exist  |
+2023-07-18T10:12:34.261Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.MisconfiguredSanPolicyOnCrossReplicatedWinVmName description=The Microsoft default SAN policy might cause some protected volumes to become offline upon recovery  |
+2023-07-18T10:12:34.291Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VirtualMachineHasZeroSizeVolumeName description=Virtual Machine  has at least one volume of size 0  |
+2023-07-18T10:12:34.317Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVmScsiMismatch description=Values collected from the hypervisor and the VM manager do not match.  |
+2023-07-18T10:12:34.350Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ProtectedVmWithUnkownOS description=Vm with unkown OS  |
+2023-07-18T10:12:34.380Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.CheckHost description=A host is unavailable, possibly due to incompatible version or native state.  |
+2023-07-18T10:12:34.409Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.FileRestoreComponentNotAvailable description=The file restore component is not available  |
+2023-07-18T10:12:34.450Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraDiskboxScsiGuidMismatch description=Values collected from the VRA hypervisor and the VM manager do not match.  |
+2023-07-18T10:12:34.477Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmPsModuleNotFoundAtHos description=Hyper-V PS module not found on host  |
+2023-07-18T10:12:34.533Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmFailedToCreateFolderAtHost description=Failed to create folder at host  |
+2023-07-18T10:12:34.563Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmFailedToCheckIfPsModuleInstalled description=Failed to check if Hyper-V PS module is installed on host  |
+2023-07-18T10:12:34.601Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmFailedToUploadScriptToHost description=Failed to upload Powershell scripts to host  |
+2023-07-18T10:12:34.635Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ScvmmHostIsNotResponding description=Host is not responding  |
+2023-07-18T10:12:34.666Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.HostInMaintenanceMode description=Host is in maintenance mode  |
+2023-07-18T10:12:34.697Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.VraServiceIsDown description=Vra service is down  |
+2023-07-18T10:12:34.731Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZvmTweaksLoadFailed description=Error occured during loading Zvm tweaks  |
+2023-07-18T10:12:34.767Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.ZVM lost access to Azure description=Zerto Virtual Manager has lost access to Azure. Use "Reconfigure Zerto Virtual Manager" option in Diagnostics Tool to solve this issue.  |
+2023-07-18T10:12:34.806Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Vm was removed from the VPG description=Vm was removed from the VPG  |
+2023-07-18T10:12:34.901Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureVraVmDeletedName description=Azure VRA VM was deleted  |
+2023-07-18T10:12:34.939Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureVraUpgradeFailedOnZcaUpgrade description=Azure VRA Upgrade failed during ZCA upgrade  |
+2023-07-18T10:12:35.013Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Fail install agent description=Failed install agent on host  |
+2023-07-18T10:12:35.038Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AgentDisconnect description=agent not connected to zvm  |
+2023-07-18T10:12:35.057Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.Datapath description=There is a problem in the VRA  |
+2023-07-18T10:12:35.077Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.RansomwareAttackName description=A ransomware attack was detected  |
+2023-07-18T10:12:35.100Z | INFO | VCenterConnectionLayer.Basics | about to create alarm in vc. name=com.zerto.event.AzureSharedDisksAreNotExcluded description=Azure Shared Disks Are Not Excluded  |
+2023-07-18T10:12:35.130Z | INFO | PreUpgradeValidations.VcPluginRegistrationValidator | registered Plugin |
+2023-07-18T10:12:35.130Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPlatformCompatibilityChecker | Starting validation |
+2023-07-18T10:12:35.136Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPlatformCompatibilityChecker | Platform is compatible with installation |
+2023-07-18T10:12:35.136Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPeerCompatibilityChecker | Starting peer zvm compatibility upgrade Validation |
+2023-07-18T10:12:35.136Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPeerCompatibilityChecker | All peer zvms are compatible |
+2023-07-18T10:12:35.136Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmPeerCompatibilityChecker | Successfully validated peer zvm compatibility |
+2023-07-18T10:12:35.136Z | INFO | PreUpgradeValidations.Validations.ZvmNode.DatabaseConfigurationChecker | Starting validation |
+2023-07-18T10:12:35.141Z | INFO | PreUpgradeValidations.Validations.ZvmNode.DatabaseConfigurationChecker | Validation passed - Not part of Availability Group |
+2023-07-18T10:12:35.141Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | Checking ZVM Upgrade is possible |
+2023-07-18T10:12:35.151Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | The target Zerto version is compatible with the existing Zerto version. |
+2023-07-18T10:12:35.164Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | All VRAs are compatible |
+2023-07-18T10:12:35.165Z | INFO | PreUpgradeValidations.Validations.ZvmNode.ZvmVersionCompatibilityChecker | Upgrade is possible |
+2023-07-18T10:12:35.165Z | INFO | PreUpgradeValidations.Program | All Validations finished successfully |
+ Tue 18 Jul 2023 10:12:35 AM UTC All Upgrade Validations finished successfully
+ Tue 18 Jul 2023 10:12:35 AM UTC backing up postgres
+ Tue 18 Jul 2023 10:12:36 AM UTC backed up postgres
+Stopping zvm-service           ... done
+Stopping swagger-service       ... done
+Stopping configuration-service ... done
+Stopping zvm-db                ... done
+Stopping tweaks-service        ... done
+Stopping logcollector-service  ... done
+Stopping gldr-agent            ... done
+Stopping management-console    ... done
+Stopping traefik ... done
+Stopping registry ... done
+Stopping zkeycloak    ... done
+Stopping zkeycloak-db ... done
+Stopping zfluentd ... done
+ Tue 18 Jul 2023 10:12:55 AM UTC wait for all containers to finish stoping
+ stop containers done
+ Tue 18 Jul 2023 10:13:55 AM UTC Restore postgres - begin
+ Tue 18 Jul 2023 10:13:55 AM UTC Restore postgres - completed filesystem upgrade
+ Tue 18 Jul 2023 10:13:55 AM UTC Restore postgres - starting temp zpostgres container
+e7cd5b0d7761e0bf3ba1c617606a4406c564ad9ab2508089b438252bc6a40c3d
+ Tue 18 Jul 2023 10:13:55 AM UTC zpostgres is running
+ Tue 18 Jul 2023 10:14:00 AM UTC Restore postgres - completed temp zpostgres container
+ Tue 18 Jul 2023 10:14:00 AM UTC Restore postgres - starting sql restore operation
+Successfully copied 377kB to zpostgres:/postgres_bak.sql
+psql:postgres_bak.sql:14: ERROR:  role "zertoadmin" already exists
+psql:postgres_bak.sql:114: ERROR:  database "zkeycloak" already exists
+ Tue 18 Jul 2023 10:14:12 AM UTC Restore postgres - completed sql restore operation
+ Tue 18 Jul 2023 10:14:12 AM UTC Restore postgres - starting reset SQL user
+ALTER ROLE
+ Tue 18 Jul 2023 10:14:12 AM UTC Restore postgres - completed reset SQL user
+zpostgres
+ Tue 18 Jul 2023 10:14:12 AM UTC Restore postgres - removed temp zpostgres container
+ Tue 18 Jul 2023 10:14:12 AM UTC Data backup started
+tar: Removing leading `/' from member names
+tar: Removing leading `/' from member names
+ Tue 18 Jul 2023 10:15:39 AM UTC Data backup completed
+secret/ingress-cert-secret created
+Infer repository core for addon ingress
+Enabling Ingress
+Setting default/ingress-cert-secret as default ingress certificate
+ingressclass.networking.k8s.io/public created
+ingressclass.networking.k8s.io/nginx created
+namespace/ingress created
+serviceaccount/nginx-ingress-microk8s-serviceaccount created
+clusterrole.rbac.authorization.k8s.io/nginx-ingress-microk8s-clusterrole created
+role.rbac.authorization.k8s.io/nginx-ingress-microk8s-role created
+clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress-microk8s created
+rolebinding.rbac.authorization.k8s.io/nginx-ingress-microk8s created
+configmap/nginx-load-balancer-microk8s-conf created
+configmap/nginx-ingress-tcp-microk8s-conf created
+configmap/nginx-ingress-udp-microk8s-conf created
+daemonset.apps/nginx-ingress-microk8s-controller created
+Ingress is enabled
+ Tue 18 Jul 2023 10:15:51 AM UTC zfluentd installation started
+Release "zfluentd" does not exist. Installing it now.
+NAME: zfluentd
+LAST DEPLOYED: Tue Jul 18 13:15:52 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+ zfluentd installation ended
+ Tue 18 Jul 2023 10:15:55 AM UTC zkeycloak installation started
+Release "zkeycloak" does not exist. Installing it now.
+NAME: zkeycloak
+LAST DEPLOYED: Tue Jul 18 13:15:55 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+Get the application URL by running these commands:
+  export INGRESS_IP=$(microk8s kubectl get ingress --namespace default zkeycloak -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+  echo https://$INGRESS_IP/auth
+ zkeycloak installation ended
+ Tue 18 Jul 2023 10:16:09 AM UTC upgrade-service installation started
+Release "upgrade-service" does not exist. Installing it now.
+NAME: upgrade-service
+LAST DEPLOYED: Tue Jul 18 13:16:10 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+See the installed app by running this command:
+microk8s kubectl get deployments -n default
+ upgrade-service installation ended
+ Tue 18 Jul 2023 10:16:14 AM UTC Empty zvm helm creation and installation started
+Creating /opt/zerto/zvr/upgrade-files/empty-zvm
+NAME: zvm
+LAST DEPLOYED: Tue Jul 18 13:16:14 2023
+NAMESPACE: default
+STATUS: deployed
+REVISION: 1
+NOTES:
+1. Get the application URL by running these commands:
+  export POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/name=empty-zvm,app.kubernetes.io/instance=zvm" -o jsonpath="{.items[0].metadata.name}")
+  export CONTAINER_PORT=$(kubectl get pod --namespace default $POD_NAME -o jsonpath="{.spec.containers[0].ports[0].containerPort}")
+  echo "Visit http://127.0.0.1:8080 to use your application"
+  kubectl --namespace default port-forward $POD_NAME 8080:$CONTAINER_PORT
+ zvm helm creation and installation ended
+ Tue 18 Jul 2023 10:16:15 AM UTC waiting for all pods to start
+ Helm charts created and installed successfully
+ Tue 18 Jul 2023 10:17:45 AM UTC Upgrading appliance. This operation may take a few minutes
+ Tue 18 Jul 2023 10:17:47 AM UTC Appliance upgrade task is still running. Task information: "Validating and  Extracting bundle"
+ Tue 18 Jul 2023 10:18:17 AM UTC Appliance upgrade task is still running. Task information: "Validating and  Extracting bundle"
+ Tue 18 Jul 2023 10:18:47 AM UTC Appliance upgrade task is still running. Task information: "Validating and  Extracting bundle"
+ Tue 18 Jul 2023 10:19:17 AM UTC Appliance upgrade task is still running. Task information: "Running pre upgrade operations"
+ Tue 18 Jul 2023 10:19:47 AM UTC Appliance upgrade task is still running. Task information: "Running pre upgrade operations"
+ Tue 18 Jul 2023 10:20:18 AM UTC Appliance upgrade task is still running. Task information: "Running Appliance upgrade"
+ Tue 18 Jul 2023 10:20:48 AM UTC Appliance upgrade task is still running. Task information: "Running Appliance upgrade"
+ Tue 18 Jul 2023 10:21:18 AM UTC Appliance upgrade task is still running. Task information: "Running Appliance upgrade"
+ Tue 18 Jul 2023 10:21:48 AM UTC Appliance upgrade task is still running. Task information: "Running Appliance upgrade"
+ Tue 18 Jul 2023 10:22:18 AM UTC Appliance upgrade task is still running. Task information: "Running Appliance upgrade"
+ Tue 18 Jul 2023 10:22:49 AM UTC Appliance upgrade task is still running. Task information: "Running Appliance upgrade"
+ Tue 18 Jul 2023 10:23:19 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:23:49 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:24:19 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:24:49 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:25:20 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:25:50 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:26:20 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:26:50 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:27:20 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:28:16 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:28:46 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:29:16 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:29:47 AM UTC Appliance upgrade task is still running. Task information: "Running ZVM upgrade - this may take several minutes"
+ Tue 18 Jul 2023 10:30:17 AM UTC Appliance upgrade task is still running. Task information: "Running VRA upgrade"
+ Tue 18 Jul 2023 10:30:47 AM UTC Appliance upgrade task is still running. Task information: "Running VRA upgrade"
+ Tue 18 Jul 2023 10:31:17 AM UTC Appliance upgrade task is still running. Task information: "Running VRA upgrade"
+ Tue 18 Jul 2023 10:31:47 AM UTC Appliance upgrade task is still running. Task information: "Running VRA upgrade"
+ Tue 18 Jul 2023 10:32:17 AM UTC Appliance upgrade task is still running. Task information: "Running VRA upgrade"
+ Tue 18 Jul 2023 10:32:47 AM UTC Appliance upgrade task is still running. Task information: "Running VRA upgrade"
+ Appliance upgrade completed successfully
+ Upgrade ZVM Appliance and VRA to version 10.0.0.1712 completed successfully
+log file: /var/log/zerto/containers/upgrade/upgrade_10-0-0-1712.log
+ Tue 18 Jul 2023 10:33:23 AM UTC cleanup - begin
+ Tue 18 Jul 2023 10:33:34 AM UTC cleanup - done
+
+Press Enter to continue...
