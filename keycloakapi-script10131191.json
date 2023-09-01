@@ -1,0 +1,14 @@
+{
+  "realm": "zerto",
+  "auth-server-url": "https://10.13.1.191/auth/",
+  "ssl-required": "none",
+  "resource": "api-script",
+  "verify-token-audience": true,
+  "credentials": {
+    "secret": "4Mf81PXuGyiWhtf0QBPIxs7hambA8DVK"
+  },
+  "confidential-port": 0,
+  "policy-enforcer": {
+    "credentials": {}
+  }
+}
