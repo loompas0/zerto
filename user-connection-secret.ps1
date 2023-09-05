@@ -51,7 +51,7 @@ $skipCertificateCheck = $true       # for self-signed certs, so this flag is pas
 # Setup API string conventions for later use
 
 $keyCloakApiBase = "https://" + $zvmAddress + "/auth/realms/zerto/protocol/openid-connect/token"
-$zvmApiBase = "https://" + $zvmAddress + "/v1/" 
+# $zvmApiBase = "https://" + $zvmAddress + "/v1/" 
 
 # Connect to Keycloak with secret and get token
 # Note: using Splat concept to neatly layout the arguments for Headers, Body, Method, and URI before making the call
