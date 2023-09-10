@@ -1,0 +1,17 @@
+{
+        "DataCenters": [
+            {
+                "DCName":"DC1",   
+                "ServerIp": "10.13.1.190",
+                "KeycloakClientID": "api-script",
+                "KeycloakClientSecret": "CpFGp28bstjzOclQdR6RUBpZ23m7p8Rm"
+            },
+            {
+                "DCName":"DC2" ,
+                "ServerIp": "10.13.1.191",
+                "KeycloakClientID": "api-script",
+                "KeycloakClientSecret": "4Mf81PXuGyiWhtf0QBPIxs7hambA8DVK"
+            }
+            
+        ] 
+}
