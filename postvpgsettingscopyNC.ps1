@@ -1,4 +1,6 @@
-. ./user-connection-secret.ps1
+# . ./user-connection-secret.ps1
+# use json file to connect to all sites
+. ./connect-secret.ps1
 # Now that we have a token because of successful Keycloak authentication, we can proceed with Zerto REST API calls
 # Get vpgidentifier to put it on a variable
 $ZertoVpgIdentifier= Read-Host -Prompt 'Input the ZertoVPG Identifier '
