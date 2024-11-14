@@ -41,7 +41,7 @@ switch ($DC)
     {
         $zvmAddress = $DC2
         $keycloakClientID = "api-script"
-        $keycloakClientSecret = "4Mf81PXuGyiWhtf0QBPIxs7hambA8DVK"
+        $keycloakClientSecret = "b0AA2idL1wM2tn8EiCCifTJkapkwhFq8"
     }
 }
 $skipCertificateCheck = $true       # for self-signed certs, so this flag is passed to Invoke-RestMethod to allow it to proceed.
@@ -51,7 +51,7 @@ $skipCertificateCheck = $true       # for self-signed certs, so this flag is pas
 # Setup API string conventions for later use
 
 $keyCloakApiBase = "https://" + $zvmAddress + "/auth/realms/zerto/protocol/openid-connect/token"
-$zvmApiBase = "https://" + $zvmAddress + "/v1/" 
+# $zvmApiBase = "https://" + $zvmAddress + "/v1/" 
 
 # Connect to Keycloak with secret and get token
 # Note: using Splat concept to neatly layout the arguments for Headers, Body, Method, and URI before making the call
@@ -84,4 +84,5 @@ catch {
     Write-Error "Error connecting to Keycloak" -ErrorAction Stop
 }
 $token = $result.access_token
-
+Write-Host " Bearer Token" -ForegroundColor Blue
+Write-Host $token
