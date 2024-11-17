@@ -17,27 +17,20 @@ and documentation remains with you.
 
 <#
 The Author is Loompas0 who is a pseudo.
-The source site of the code couldbe https://github.com/loompas0/ 
+The source site of the code could be found at https://github.com/loompas0/ 
 if you are explicitely or implicitely authorized to access to it.
 #>
 
 <#This script has been tested on a Windows environment With Zerto 10.5 version #>
 
-<#
-*** Title :             VpgModificationLtr7Years ***
-*** Aim :               Test a way to modify some settings in a VPG 
-                        Here the Yearly retention period ***
-*** Input Parameters :  None ***
-*** Output Parameters : None ***
-*** Files needed :
-        --- connect-secret.ps1 --- Program to connect to the ZVM
-        --- datacenters.json --- File with DC credentials  ***
-#>
-
-
-# History 
-# - 15/11/2023 creation and first tests
-# - 
+# =====================================================================================
+# VpgModificationLtr7Years
+# Aim: Modify retention settings in a VPG (Yearly retention period).
+# Input Parameters : None
+# Output Parameters : None
+# Files needed:
+#    --- connect-secret.ps1 --- Program to connect to the ZVM
+#    --- datacenters.json --- File with DC credentials
 # =====================================================================================
 
 # Vpg modification ltr 7 Years 
@@ -47,6 +40,7 @@ if you are explicitely or implicitely authorized to access to it.
 ############################################################ 
 
 # use json file (datacenters.json) to connect to all sites 
+# Import required modules
 . ./connect-secret.ps1
 # Now that we have a token because of successful Keycloak authentication, we can proceed with Zerto REST API calls
 # Now we have 
