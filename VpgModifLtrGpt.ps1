@@ -102,8 +102,8 @@ $Headers = @{
     "Content-Type" = "application/json"
     "Authorization" = "Bearer $token"
 }
-
-$vpgList = Invoke-ApiCall -Uri "$zvmApiBase/vpgs/" -Method "GET" -Headers $Headers
+$UriParam = $zvmApiBase + "vpgs/"
+$vpgList = Invoke-ApiCall -Uri $UriParam -Method "GET" -Headers $Headers
 
 # Now we have 
 #       * The basic address of the zvm              : $zvmApiBase
@@ -111,6 +111,7 @@ $vpgList = Invoke-ApiCall -Uri "$zvmApiBase/vpgs/" -Method "GET" -Headers $Heade
 #       * All Vpg present in the zvm                : $VpgList
 
 # Step 3: Choose a VPG
+$vpgList | Select-Object VpgIdentifier, VPGName,VMsCount, SourceSite, TargetSite, ActualRPO, IOPS, ThroughputInMB | format-table 
 $VpgIdentifier = Select-VPG -vpgList $vpgList
 
 # Now we have 
@@ -121,7 +122,8 @@ $VpgIdentifier = Select-VPG -vpgList $vpgList
 
 # Step 4: Create a VPG setting to modify
 $Body = "{`"vpgIdentifier`" :  `"$VpgIdentifier`"}"
-$VpgSettingsIdentifier = Invoke-ApiCall -Uri "$zvmApiBase/vpgSettings/" -Method "POST" -Headers $Headers -Body $Body
+$UriParam = $zvmApiBase + "vpgSettings/"
+$VpgSettingsIdentifier = Invoke-ApiCall -Uri $UriParam -Method "POST" -Headers $Headers -Body $Body
 
 # Now we have 
 #       * The basic address of the zvm              : $zvmApiBase
@@ -131,7 +133,8 @@ $VpgSettingsIdentifier = Invoke-ApiCall -Uri "$zvmApiBase/vpgSettings/" -Method 
 #       * the id of the modifications (settings)    : $VpgSettingsIdentifier
 
 # Step 5: Retrieve VPG settings
-$VpgSettings = Invoke-ApiCall -Uri "$zvmApiBase/vpgSettings/$VpgSettingsIdentifier" -Method "GET" -Headers $Headers
+$UriParam = $zvmApiBase + "vpgSettings/" + $VpgSettingsIdentifier
+$VpgSettings = Invoke-ApiCall -Uri $UriParam -Method "GET" -Headers $Headers
 
 # Now we have 
 #       * The basic address of the zvm              : $zvmApiBase
@@ -150,7 +153,8 @@ $VpgSettings.LongTermRetention.SchedulerPolicy.Yearly.RetentionDuration.Count = 
 
 # Step 7: Convert settings to JSON and modify VPG settings
 $VpgSettingsJson = $VpgSettings | ConvertTo-Json -Depth 7
-Invoke-ApiCall -Uri "$zvmApiBase/vpgSettings/$VpgSettingsIdentifier" -Method "PUT" -Headers $Headers -Body $VpgSettingsJson
+
+Invoke-ApiCall -Uri $UriParam -Method "PUT" -Headers $Headers -Body $VpgSettingsJson
 
 # Now we have 
 #       * The basic address of the zvm              : $zvmApiBase
@@ -161,6 +165,7 @@ Invoke-ApiCall -Uri "$zvmApiBase/vpgSettings/$VpgSettingsIdentifier" -Method "PU
 #       * The full settings of VPG in Json format   : $VpgSettingsJson modified with correct nb of year
 
 # Step 8: Commit the changes and show them
-Invoke-ApiCall -Uri "$zvmApiBase/vpgSettings/$VpgSettingsIdentifier/commit" -Method "POST" -Headers $Headers
-
+$UriParam = $zvmApiBase + "vpgSettings/" + $VpgSettingsIdentifier + "/commit"
+$BatchId = Invoke-ApiCall -Uri $UriParam -Method "POST" -Headers $Headers 
+Write-Host "The batch process id is : $BatchId" -ForegroundColor Red 
 Write-Host "The VPG $VpgSettingsIdentifier has $NbYears Years of retention."
