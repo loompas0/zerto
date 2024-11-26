@@ -16,7 +16,7 @@ and documentation remains with you.
 #>
 
 <#
-The Author is Loompas0 who is a pseudo.
+The Author is Loompas0 who is a pseudo. my name is not important
 The source site of the code could be found at https://github.com/loompas0/ 
 if you are explicitely or implicitely authorized to access to it.
 #>
